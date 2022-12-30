@@ -1,9 +1,8 @@
 <script setup>
-import Maimai from './components/Maimai.vue';
 </script>
 
 <template>
-  <Maimai class="h-full w-full" />
+  <router-view />
 </template>
 
 <style scoped>
