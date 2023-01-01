@@ -1,6 +1,8 @@
 <script setup>
 import MaimaiDeluxe from './MaimaiDeluxe.vue';
 import MaimaiFinale from './MaimaiFinale.vue';
+import SDVX from './SDVX.vue';
+import Popn from './Popn.vue';
 </script>
 
 <template>
@@ -14,8 +16,13 @@ import MaimaiFinale from './MaimaiFinale.vue';
         <MaimaiFinale mode="compact" />
       </div>
 
-      <div class="flex items-center justify-center h-72">sdvx</div>
-      <div class="flex items-center justify-center h-72">pop'n'music</div>
+      <div class="relative h-72 overflow-hidden">
+        <SDVX mode="compact" />
+      </div>
+
+      <div class="relative h-72">
+        <Popn mode="compact" />
+      </div>
       <div class="flex items-center justify-center h-72">beatsaber</div>
       <!-- <div class="flex items-center justify-center h-72">iidx</div> -->
       <!-- <div class="flex items-center justify-center h-72">chunithm</div> -->

@@ -12,7 +12,7 @@
       <div class="balloon bal5"></div>
     </div>
     <div class="profile h-full w-full flex flex-col items-center" :class="[(mode === 'page') ? 'justify-start' : 'justify-center']">
-      <div v-if="mode === 'page'" class="title relative">
+      <div v-if="mode === 'page'" class="title relative mb-4">
         <img class="absolute" :src="maiPageTitleBg" alt="Maimai page title background" />
         <h1 class="absolute text-3xl font-bold">プロフィール</h1>
       </div>

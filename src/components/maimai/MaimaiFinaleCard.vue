@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <div class="card p-1.5 rounded-lg mt-4">
+  <div class="card p-1.5 rounded-lg">
     <div class="card-inner flex p-4 rounded-lg h-full">
       <div class="avatar rounded"><img :src="avatar" alt="Profile picture"></div>
       
