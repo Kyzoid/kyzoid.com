@@ -2,8 +2,9 @@
   <div>
     <div class="profile rounded-2xl text-black px-3">
       <div class="profile-inner py-2">
-        <div class="title flex justify-center items-center mx-2 mb-1">
-          <h2 class="font-bold z-30 uppercase">Kyzoid</h2>
+        <div class="relative title flex justify-center items-center mx-2 mb-1">
+          <h2 class="font-bold z-30 ml-3">Kyzoid</h2>
+          <img class="absolute z-30 left-4" width="28" :src="character" alt="Character">
           <img class="z-20" :src="bgTitle" alt="">
         </div>
         <div class="flex flex-col bg-white px-3 py-0.5">
@@ -11,7 +12,9 @@
           <span class="id-value text-lg">7232-2008-8884</span>
         </div>
         <div class="flex items-center">
-          <div class="h-10 w-10 rounded-full border-blue-600 border-2"></div>
+          <div class="h-10 w-10 rounded-full border-blue-600 border-2 ml-1">
+            <img class="" :src="class3" alt="Popn class 3">
+          </div>
           <div class="class flex flex-col pt-1 ml-1">
             <span class="class-label">ポップンクラス</span>
             <div class="class-rating flex justify-center"><span class="rating text-lg">48.23</span></div>
@@ -24,6 +27,8 @@
 
 <script setup>
 import bgTitle from '/popn/bg_title.svg';
+import character from '/popn/img_binary.png';
+import class3 from '/popn/class_3.png';
 </script>
 
 <style scoped>
