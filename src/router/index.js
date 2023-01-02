@@ -4,6 +4,11 @@ import MaimaiFinale from '/src/components/MaimaiFinale.vue';
 import Home from '/src/components/Home.vue';
 import SDVX from '/src/components/SDVX.vue';
 import Popn from '/src/components/Popn.vue';
+import BeatSaber from '/src/components/BeatSaber.vue';
+import Ez2on from '/src/components/Ez2on.vue';
+import Osu from '/src/components/Osu.vue';
+import Quaver from '/src/components/Quaver.vue';
+import Etterna from '/src/components/Etterna.vue';
 
 const routes = [
     {
@@ -33,6 +38,36 @@ const routes = [
         path: '/popn',
         name: 'Popn',
         component: Popn,
+        props: { mode: 'page' }
+    },
+    {
+        path: '/beatsaber',
+        name: 'BeatSaber',
+        component: BeatSaber,
+        props: { mode: 'page' }
+    },
+    {
+        path: '/ez2on',
+        name: 'Ez2on',
+        component: Ez2on,
+        props: { mode: 'page' }
+    },
+    {
+        path: '/osu',
+        name: 'Osu',
+        component: Osu,
+        props: { mode: 'page' }
+    },
+    {
+        path: '/quaver',
+        name: 'Quaver',
+        component: Quaver,
+        props: { mode: 'page' }
+    },
+    {
+        path: '/etterna',
+        name: 'Etterna',
+        component: Etterna,
         props: { mode: 'page' }
     },
 ];

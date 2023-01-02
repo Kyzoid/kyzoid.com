@@ -32,13 +32,6 @@ import class3 from '/popn/class_3.png';
 </script>
 
 <style scoped>
-/* .title {
-  background-color: white;
-  border: 2px solid #9A9546;
-  letter-spacing: 0.05em;
-  box-shadow: 2px 2px 0px 1px #251F8F;
-} */
-
 .title {
   position: relative;
   margin-top: -1.5rem;
