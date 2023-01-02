@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main relative h-full w-full" :class="[(mode === 'page' ? '' : 'bg-main-compact')]">
+  <div class="bg-main relative h-full w-full">
   </div>
 </template>
 
@@ -11,9 +11,9 @@ defineProps({
 
 <style scoped>
 .bg-main {
-}
-
-.bg-main-compact {
+  background: url("/beatsaber/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: 100%;
 }
 </style>

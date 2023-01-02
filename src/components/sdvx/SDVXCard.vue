@@ -27,7 +27,7 @@ import dan from '/sdvx/dan/none.png';
 }
 .card-bg {
   opacity: 0.8;
-  filter: drop-shadow(1px 1px 4px black);
+  filter: drop-shadow(2px 2px 4px black);
 }
 
 .apcard {
