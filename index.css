@@ -9,3 +9,17 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Torus';
+  src: url('fonts/Torus-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Torus';
+  src: url('fonts/Torus-SemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
