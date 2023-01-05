@@ -1,5 +1,5 @@
 <template>
-  <div class="chip text-white text-sm py-1 px-3 rounded-lg flex items-center justify-between">
+  <div class="chip text-white text-xs py-1 px-3 rounded-lg flex items-center justify-between">
     <span class="font-bold">{{ label }}</span>
     <span class="divider-white mx-3"></span>
     <span>{{ value }}</span>

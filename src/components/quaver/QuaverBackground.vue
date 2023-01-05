@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main relative h-full w-full" :class="[(mode === 'page' ? '' : 'bg-main-compact')]">
+  <div class="bg-main relative h-full w-full">
   </div>
 </template>
 
@@ -11,9 +11,6 @@ defineProps({
 
 <style scoped>
 .bg-main {
-}
-
-.bg-main-compact {
-  background-size: 100%;
+  background-color: #1A1A1A;
 }
 </style>

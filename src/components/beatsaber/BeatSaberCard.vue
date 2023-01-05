@@ -3,10 +3,7 @@
     <img class="rounded-full border-2 border-blue-400" :src="avatar" width="112" alt="Avatar" />
     <div class="flex flex-col ml-3">
       <div class="flex items-center">
-        <div class="flex items-center">
-          <img :src="flag" width="18" alt="France flag" />
-          <span class="text-blue-400 text-lg font-bold ml-2">Kyzoid</span>
-        </div>
+        <span class="text-blue-400 text-lg font-bold">Kyzoid</span>
         <div class="divider mx-3"></div>
         <span class="font-bold pp">2,968.90pp</span>
       </div>

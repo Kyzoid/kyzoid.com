@@ -30,11 +30,11 @@ import Etterna from './Etterna.vue';
       </div>
 
       <div class="relative h-72">
-        <BeatSaber mode="compact" />
+        <Ez2on mode="compact" />
       </div>
 
       <div class="relative h-72">
-        <Ez2on mode="compact" />
+        <BeatSaber mode="compact" />
       </div>
 
       <div class="relative h-72">
