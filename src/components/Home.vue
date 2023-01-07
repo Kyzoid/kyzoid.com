@@ -1,3 +1,46 @@
+<template>
+  <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-0">
+    <div class="relative h-80">
+      <MaimaiDeluxe mode="compact" class="h-full w-full" />
+    </div>
+
+    <div class="relative h-80 overflow-hidden">
+      <MaimaiFinale mode="compact" />
+    </div>
+
+    <div class="relative h-80 overflow-hidden">
+      <SDVX mode="compact" />
+    </div>
+
+    <div class="relative h-80">
+      <Popn mode="compact" />
+    </div>
+
+    <div class="relative h-80">
+      <Ez2on mode="compact" />
+    </div>
+
+    <div class="relative h-80">
+      <BeatSaber mode="compact" />
+    </div>
+
+    <div class="relative h-80">
+      <Osu mode="compact" />
+    </div>
+
+    <div class="relative h-80">
+      <Quaver mode="compact" />
+    </div>
+
+    <div class="relative h-80">
+      <Etterna mode="compact" />
+    </div>
+    <!-- <div class="flex items-center justify-center h-80">iidx</div> -->
+    <!-- <div class="flex items-center justify-center h-80">chunithm</div> -->
+    <!-- <div class="flex items-center justify-center h-80">jubeat</div> -->
+  </div>
+</template>
+
 <script setup>
 import MaimaiDeluxe from './MaimaiDeluxe.vue';
 import MaimaiFinale from './MaimaiFinale.vue';
@@ -9,51 +52,6 @@ import Osu from './Osu.vue';
 import Quaver from './Quaver.vue';
 import Etterna from './Etterna.vue';
 </script>
-
-<template>
-  <div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-0">
-      <div class="relative h-72">
-        <MaimaiDeluxe mode="compact" class="h-full w-full" />
-      </div>
-
-      <div class="relative h-72 overflow-hidden">
-        <MaimaiFinale mode="compact" />
-      </div>
-
-      <div class="relative h-72 overflow-hidden">
-        <SDVX mode="compact" />
-      </div>
-
-      <div class="relative h-72">
-        <Popn mode="compact" />
-      </div>
-
-      <div class="relative h-72">
-        <Ez2on mode="compact" />
-      </div>
-
-      <div class="relative h-72">
-        <BeatSaber mode="compact" />
-      </div>
-
-      <div class="relative h-72">
-        <Osu mode="compact" />
-      </div>
-
-      <div class="relative h-72">
-        <Quaver mode="compact" />
-      </div>
-
-      <div class="relative h-72">
-        <Etterna mode="compact" />
-      </div>
-      <!-- <div class="flex items-center justify-center h-72">iidx</div> -->
-      <!-- <div class="flex items-center justify-center h-72">chunithm</div> -->
-      <!-- <div class="flex items-center justify-center h-72">jubeat</div> -->
-    </div>
-  </div>
-</template>
 
 <style scoped>
 </style>
