@@ -22,7 +22,7 @@
       </div>
       
       <div class="mt-2">
-        <span class="uppercase font-medium text-sm">Total Play Count</span>
+        <span class="uppercase font-medium text-sm">Play Count</span>
         <div class="grid grid-cols-4 gap-4">
           <Stat title="4S" :value="data.totalPlayCount['4S']" />
           <Stat title="5S" :value="data.totalPlayCount['5S']" />

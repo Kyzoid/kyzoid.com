@@ -17,6 +17,10 @@
     </div>
 
     <div class="relative h-80">
+      <Jubeat mode="compact" />
+    </div>
+
+    <div class="relative h-80">
       <Ez2on mode="compact" />
     </div>
 
@@ -35,9 +39,6 @@
     <div class="relative h-80">
       <Etterna mode="compact" />
     </div>
-    <!-- <div class="flex items-center justify-center h-80">iidx</div> -->
-    <!-- <div class="flex items-center justify-center h-80">chunithm</div> -->
-    <!-- <div class="flex items-center justify-center h-80">jubeat</div> -->
   </div>
 </template>
 
@@ -51,6 +52,7 @@ import Ez2on from './Ez2on.vue';
 import Osu from './Osu.vue';
 import Quaver from './Quaver.vue';
 import Etterna from './Etterna.vue';
+import Jubeat from './Jubeat.vue';
 </script>
 
 <style scoped>
