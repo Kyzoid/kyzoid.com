@@ -9,6 +9,8 @@ import Ez2on from '/src/components/Ez2on.vue';
 import Osu from '/src/components/Osu.vue';
 import Quaver from '/src/components/Quaver.vue';
 import Etterna from '/src/components/Etterna.vue';
+import Jubeat from '/src/components/Jubeat.vue';
+import Chunithm from '/src/components/Chunithm.vue';
 
 const routes = [
     {
@@ -68,6 +70,18 @@ const routes = [
         path: '/etterna',
         name: 'Etterna',
         component: Etterna,
+        props: { mode: 'page' }
+    },
+    {
+        path: '/jubeat',
+        name: 'Jubeat',
+        component: Jubeat,
+        props: { mode: 'page' }
+    },
+    {
+        path: '/chunithm',
+        name: 'Chunithm',
+        component: Chunithm,
         props: { mode: 'page' }
     },
 ];

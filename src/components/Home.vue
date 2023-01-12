@@ -4,6 +4,10 @@
       <MaimaiDeluxe mode="compact" class="h-full w-full" />
     </div>
 
+    <div class="relative h-80">
+      <Chunithm mode="compact" class="h-full w-full" />
+    </div>
+
     <div class="relative h-80 overflow-hidden">
       <MaimaiFinale mode="compact" />
     </div>
@@ -53,6 +57,7 @@ import Osu from './Osu.vue';
 import Quaver from './Quaver.vue';
 import Etterna from './Etterna.vue';
 import Jubeat from './Jubeat.vue';
+import Chunithm from './Chunithm.vue';
 </script>
 
 <style scoped>

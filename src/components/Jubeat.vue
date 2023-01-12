@@ -2,7 +2,7 @@
   <div class="relative h-full w-full">
     <JubeatBackground :mode="mode" />
 
-    <RouterLink to="/ez2on" class="logo" :class="[(mode === 'page' ? 'logo-full' : 'logo-compact')]">
+    <RouterLink to="/jubeat" class="logo" :class="[(mode === 'page' ? 'logo-full' : 'logo-compact')]">
       <img :src="logo" alt="Jubeat logo" />
     </RouterLink>
 
