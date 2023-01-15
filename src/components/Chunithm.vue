@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import logo from '/maimai/kv_logo.png';
+import logo from '/chunithm/logo.png';
 import ChunithmCard from './chunithm/ChunithmCard.vue';
 import ChunithmBackground from './chunithm/ChunithmBackground.vue';
 
