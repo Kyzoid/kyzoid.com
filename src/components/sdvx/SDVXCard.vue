@@ -1,32 +1,47 @@
 <template>
   <div class="card">
+    <img class="crew" :src="crew" alt="Crew" />
     <img class="card-bg w-full" :src="card" alt="Card background" />
     <img class="apcard" :src="apcard" alt="Card background" />
     <img class="dan" width="105" :src="dan" alt="Dan" />
     <div class="volforce flex items-center">
-      <img  width="50" :src="volforce" alt="Volforce" />
+      <img   width="50" :src="volforce" alt="Volforce" />
       <div class="flex flex-col">
         <span class="uppercase text-xs">Volforce</span>
-        <span class="">16.016</span>
+        <span class="">{{ data.rating }}</span>
       </div>
     </div>
-    <span class="name uppercase">Kyzoid</span>
+    <span class="title">{{ data.title }}</span>
+    <span class="name uppercase">{{ data.username }}</span>
   </div>
 </template>
 
 <script setup>
+import crew from '/sdvx/crew.png';
 import card from '/sdvx/card.png';
 import apcard from '/sdvx/apcard.png';
 import volforce from '/sdvx/volforce/6.png';
 import dan from '/sdvx/dan/none.png';
+
+const data = {
+  username: 'Kyzoid',
+  title: 'Helloooo',
+  rating: 16.016
+}
 </script>
 
 <style scoped>
+.crew {
+  position: absolute;
+  top: -5.5rem;
+  right: -1rem;
+}
+
 .card {
   width: 388px;
 }
 .card-bg {
-  opacity: 0.8;
+  opacity: 1;
   filter: drop-shadow(2px 2px 4px black);
 }
 
@@ -39,9 +54,15 @@ import dan from '/sdvx/dan/none.png';
 
 .name {
   position: absolute;
-  top: 3.8rem;
+  top: 5.55rem;
   left: 10rem;
   letter-spacing: 0.1em;
+}
+
+.title {
+  position: absolute;
+  top: 3.7rem;
+  left: 10rem;
 }
 
 .dan {

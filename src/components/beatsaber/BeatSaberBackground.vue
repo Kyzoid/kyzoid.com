@@ -14,6 +14,6 @@ defineProps({
   background: url("/beatsaber/bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100%;
+  background-size: cover;
 }
 </style>
