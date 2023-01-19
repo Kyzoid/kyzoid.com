@@ -1,11 +1,3 @@
-<script setup>
-  import avatar from '/maimai_finale/avatar.png';
-  import star from '/maimai_finale/star.png';
-  import starSolo from '/maimai_finale/star_solo.png';
-  // import titleSilver from '/maimai_finale/title_silver.svg';
-  import titleBlank from '/maimai_finale/title_blank.svg';
-</script>
-
 <template>
   <div class="card p-1.5 rounded-lg">
     <div class="card-inner flex p-4 rounded-lg h-full">
@@ -17,26 +9,37 @@
             <img class="absolute img-top" :src="starSolo" alt="Star top">
             <img class="absolute img-bottom" :src="star" alt="Star bottom">
             <span class="label uppercase mr-1">Rating</span>
-            <span>2.78</span>
+            <span>{{ data.rating }}</span>
           </div>
           <div class="level flex flex-col items-end font-bold">
             <span class="label">TOTAL Lv.</span>
-            <span>12</span>
+            <span>{{ data.level }}</span>
           </div>
         </div>
 
         <div class="flex flex-col mb-1">
-          <h2 class="text-xl uppercase name mb-1">Kyzoid</h2>
+          <h2 class="text-xl uppercase name mb-1">{{ data.username }}</h2>
           <div class="relative description">
             <img class="absolute" :src="titleBlank" alt="Title silver" />
             <!-- <span class="absolute ml-4 mt-0.5">ソルトにガチ恋</span> -->
-            <span class="absolute ml-4 mt-1">debut</span>
+            <span class="absolute ml-4 mt-1">{{ data.title }}</span>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+import avatar from '/maimai_finale/avatar.png';
+import star from '/maimai_finale/star.png';
+import starSolo from '/maimai_finale/star_solo.png';
+// import titleSilver from '/maimai_finale/title_silver.svg';
+import titleBlank from '/maimai_finale/title_blank.svg';
+import stats from '/src/stats.json';
+
+const data = stats["maimaiFinale"];
+</script>
 
 <style scoped>
 .name {

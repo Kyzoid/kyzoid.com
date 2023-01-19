@@ -19,12 +19,9 @@
 
 <script setup>
 import emblem from '/jubeat/emblem.png';
+import stats from '/src/stats.json';
 
-const data = {
-  username: 'Kyzoid',
-  rating: 2377.1,
-  playCount: 83
-}
+const data = stats['jubeat'];
 </script>
 
 <style scoped>

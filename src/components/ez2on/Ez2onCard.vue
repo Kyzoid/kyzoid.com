@@ -24,10 +24,10 @@
       <div class="mt-2">
         <span class="uppercase font-medium text-sm">Play Count</span>
         <div class="grid grid-cols-4 gap-4">
-          <Stat title="4S" :value="data.totalPlayCount['4S']" />
-          <Stat title="5S" :value="data.totalPlayCount['5S']" />
-          <Stat title="6S" :value="data.totalPlayCount['6S']" />
-          <Stat title="8S" :value="data.totalPlayCount['8S']" />
+          <Stat title="4S" :value="data.playCount['4S']" />
+          <Stat title="5S" :value="data.playCount['5S']" />
+          <Stat title="6S" :value="data.playCount['6S']" />
+          <Stat title="8S" :value="data.playCount['8S']" />
         </div>
       </div>
     </div>
@@ -37,27 +37,9 @@
 <script setup>
 import Stat from './Stat.vue';
 import avatar from '/ez2on/avatar.jpg';
+import stats from '/src/stats.json';
 
-const data = {
-  username: 'Kyzoid',
-  level: 58,
-  rating: {
-    '4S': '19,070',
-    '5S': '1,645',
-    '6S': '19,366',
-    '8S': '0,134'
-  },
-  totalPlayCount: {
-    '4S': '143',
-    '5S': '9',
-    '6S': '120',
-    '8S': '1',
-  }
-};
-
-const getDigitToAdd = (length) => {
-  return 6 - length;
-}
+const data = stats['ez2on'];
 </script>
 
 <style scoped>

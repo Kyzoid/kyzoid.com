@@ -4,11 +4,14 @@
     <img class="card-bg w-full" :src="card" alt="Card background" />
     <img class="apcard" :src="apcard" alt="Card background" />
     <img class="dan" width="105" :src="dan" alt="Dan" />
-    <div class="volforce flex items-center">
-      <img   width="50" :src="volforce" alt="Volforce" />
+    <div class="volforce flex items-end">
+      <div class="flex flex-col item-center justify-center">
+        <img width="44" :src="volforce" alt="Volforce" />
+        <img class="volforce-force -mt-2" :src="`/sdvx/volforce/force/${force()}.png`" alt="Volforce stars">
+      </div>
       <div class="flex flex-col">
-        <span class="uppercase text-xs">Volforce</span>
-        <span class="">{{ data.rating }}</span>
+        <span class="uppercase volforce-label tracking-wider">Volforce</span>
+        <span class="-mt-1 tracking-wider">{{ data.rating }}</span>
       </div>
     </div>
     <span class="title">{{ data.title }}</span>
@@ -22,15 +25,27 @@ import card from '/sdvx/card.png';
 import apcard from '/sdvx/apcard.png';
 import volforce from '/sdvx/volforce/6.png';
 import dan from '/sdvx/dan/none.png';
+import stats from '/src/stats.json';
 
-const data = {
-  username: 'Kyzoid',
-  title: 'Helloooo',
-  rating: 16.016
+const data = stats["SDVX"];
+const force = () => {
+  const decimals = data.rating.split('.').reverse()[0];
+  if (decimals < 250 ) return 1;
+  if (decimals < 500 ) return 2;
+  if (decimals < 750 ) return 3;
+  return 4;
 }
 </script>
 
 <style scoped>
+.volforce-label {
+  font-size: 10px;
+}
+
+.volforce-force {
+  height: 10px;
+}
+
 .crew {
   position: absolute;
   top: -5.5rem;
@@ -61,7 +76,7 @@ const data = {
 
 .title {
   position: absolute;
-  top: 3.7rem;
+  top: 3.75rem;
   left: 10rem;
 }
 
@@ -73,7 +88,7 @@ const data = {
 
 .volforce {
   position: absolute;
-  bottom: 1.45rem;
-  right: 1.3rem;
+  bottom: 1.75rem;
+  right: 1.6rem;
 }
 </style>

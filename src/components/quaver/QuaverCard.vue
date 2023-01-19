@@ -1,10 +1,10 @@
 <template>
   <div class="profile">
     <div class="flex justify-end">
-      <div class="mode-switch mb-2" :class="[ (mode === 4) ? 'mode-active-4' : 'mode-active-7']">
+      <div class="mode-switch mb-2" :class="[ (mode === '4K') ? 'mode-active-4' : 'mode-active-7']">
         <div class="thumb"></div>
-        <div class="mode mode-4" @click="mode = 4">4K</div>
-        <div class="mode mode-7" @click="mode = 7">7K</div>
+        <div class="mode mode-4" @click="mode = '4K'">4K</div>
+        <div class="mode mode-7" @click="mode = '7K'">7K</div>
       </div>
     </div>
     <div class="w-96 flex items-start profile-card p-4 rounded">
@@ -48,15 +48,13 @@ import { ref, computed } from 'vue';
 import avatar from '/quaver/avatar.jpg';
 import flag from '/quaver/fr.svg';
 import alphaTester from '/quaver/alpha_tester.png';
+import stats from '/src/stats.json';
 
-const mode = ref(7);
-const data = {
-  4: { rating: 722.13, accuracy: '98.89%', countryRank: 18, globalRank: 658, playCount: '928' },
-  7: { rating: 662.59, accuracy: '97.47%', countryRank: 5, globalRank: 139, playCount: '547' },
-};
+const mode = ref('7K');
+const data = stats['quaver'];
 
 const currentMode = computed(() => {
-  return data[mode.value];
+  return data.rating[mode.value];
 });
 </script>
 

@@ -13,7 +13,7 @@
       </div>
     </div>
     <img class="rounded shadow z-10" :src="avatar" width="123" alt="Avatar" />
-    <div class="flex flex-col w-80">
+    <div class="flex flex-col w-48">
       <div class="rating stream w-full mb-0.5" :style="`width: ${getPercent(data.rating.stream)}%`">
         <span class="text-xs font-medium pl-1 pb-0.5">{{ data.rating.stream }}</span>
       </div>
@@ -43,21 +43,9 @@
 import avatar from "/etterna/avatar.jpg";
 import earth from "/etterna/earth.png";
 import flag from "/etterna/fr.svg";
+import stats from '/src/stats.json';
 
-const data = {
-  rating: {
-    global: '24.00',
-    stream: '23.29',
-    jumpstream: '24.47',
-    handstream: '24.66',
-    stamina: '24.03',
-    jacks: '22.50',
-    chordjacks: '23.28',
-    technical: '24.25'
-  },
-  globalRank: 2791,
-  countryRank: 46
-};
+const data = stats['etterna'];
 
 const getPercent = (rating) => {
   const highestRating = data.rating.handstream;
@@ -66,6 +54,10 @@ const getPercent = (rating) => {
 </script>
 
 <style scoped>
+.profile {
+  width: max-content;
+}
+
 .rating {
   height: 14px;
   position: relative;

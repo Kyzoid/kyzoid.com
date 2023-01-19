@@ -1,0 +1,91 @@
+{
+  "maimaiDeluxe": {
+    "username": "Kyzoid",
+    "rating": 10103,
+    "playCount": 97,
+    "title": "ぱないの！",
+    "classRank": "a4",
+    "courseRank": 1
+  },
+  "chunithm": {
+    "username": "Kyzoid",
+    "rating": "4.78",
+    "playCount": 4,
+    "title": "New Comer",
+    "level": 2
+  },
+  "maimaiFinale": {
+    "username": "Kyzoid",
+    "rating": 2.78,
+    "title": "debut",
+    "level": 12
+  },
+  "SDVX": {
+    "username": "Kyzoid",
+    "rating": "16.675",
+    "title": "よろしくお願いします！"
+  },
+  "popn": {
+    "username": "Kyzoid",
+    "id": "7232-2008-8884",
+    "rating": 48.23
+  },
+  "jubeat": {
+    "username": "Kyzoid",
+    "rating": 2377.1,
+    "playCount": 83
+  },
+  "ez2on": {
+    "username": "Kyzoid",
+    "level": 58,
+    "rating": {
+      "4S": "19,070",
+      "5S": "1,645",
+      "6S": "19,366",
+      "8S": "0,134"
+    },
+    "playCount": {
+      "4S": "143",
+      "5S": "143",
+      "6S": "143",
+      "8S": "143"
+    }
+  },
+  "beatsaber": {
+    "username": "Kyzoid",
+    "rating": "2,968.90",
+    "globalRank": 12309,
+    "countryRank": 689,
+    "playCount": 91
+  },
+  "osu": {
+    "username": "Kyzoid",
+    "rating": {
+      "std" : { "pp": null, "globalRank": null, "countryRank": null, "accuracy": "98,97%", "playCount": "25 880" },
+      "taiko" : { "pp": null, "globalRank": null, "countryRank": null, "accuracy": "98,23%", "playCount": "2 945" },
+      "mania" : { "pp": 8093, "globalRank": "2 924", "countryRank": 41, "accuracy": "94,69%", "playCount": "20 889" }
+    }
+  },
+  "quaver": {
+    "username": "Kyzoid",
+    "rating": {
+      "4K": { "rating": 722.13, "accuracy": "98.89%", "countryRank": 18, "globalRank": 658, "playCount": "928" },
+      "7K": { "rating": 662.59, "accuracy": "97.47%", "countryRank": 5, "globalRank": 139, "playCount": "547" }
+    }
+  },
+  "etterna": {
+    "username": "Kyzoid",
+    "globalRank": 2791,
+    "countryRank": 46,
+    "rating": {
+      "global": "24.00",
+      "stream": "23.29",
+      "jumpstream": "24.47",
+      "handstream": "24.66",
+      "stamina": "24.03",
+      "jacks": "22.50",
+      "chordjacks": "23.28",
+      "technical": "24.25"
+    }
+  }
+}

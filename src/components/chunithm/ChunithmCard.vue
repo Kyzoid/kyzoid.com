@@ -34,14 +34,9 @@
 
 <script setup>
 import avatar from '/chunithm/avatar.png';
+import stats from '/src/stats.json';
 
-const data = {
-  username: 'Kyzoid',
-  honor: 'New comer',
-  level: 2,
-  rating: '4.78',
-  playCount: 4
-}
+const data = stats["chunithm"];
 </script>
 
 <style scoped>

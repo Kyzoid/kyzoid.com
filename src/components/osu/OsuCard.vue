@@ -5,9 +5,9 @@
         <span class="menu menu-active">infos</span>
       </div>
       <ul class="flex items-center">
-        <li class="menu mr-3" :class="[ mode === 0 ? 'menu-active' : '']" @click="mode = 0">osu!</li>
-        <li class="menu mr-3" :class="[ mode === 1 ? 'menu-active' : '']" @click="mode = 1">osu!taiko</li>
-        <li class="menu" :class="[ mode === 2 ? 'menu-active' : '']" @click="mode = 2">osu!mania</li>
+        <li class="menu mr-3" :class="[ mode === 'std' ? 'menu-active' : '']" @click="mode = 'std'">osu!</li>
+        <li class="menu mr-3" :class="[ mode === 'taiko' ? 'menu-active' : '']" @click="mode = 'taiko'">osu!taiko</li>
+        <li class="menu" :class="[ mode === 'mania' ? 'menu-active' : '']" @click="mode = 'mania'">osu!mania</li>
       </ul>
     </div>
     <div class="profile rounded-b flex items-start p-4">
@@ -16,7 +16,7 @@
         <div class="flex items-center">
           <h2 class="text-lg font-medium flex items-center">
             <img :src="flag" width="22" alt="France flag" />
-            <span class="ml-2">Kyzoid</span>
+            <span class="ml-2">{{ data.username }}</span>
           </h2>
           <div v-if="currentMode.pp" class="mx-2 divider"></div>
           <div v-if="currentMode.pp" class="pp text-sm">
@@ -57,16 +57,13 @@
 import { ref, computed } from 'vue';
 import avatar from '/osu/avatar.jpg';
 import flag from '/osu/fr.svg';
+import stats from '/src/stats.json';
 
-const mode = ref(2);
-const data = {
-  0 : { pp: null, globalRank: null, countryRank: null, accuracy: '98,97%', playCount: '25 880' },
-  1 : { pp: null, globalRank: null, countryRank: null, accuracy: '98,23%', playCount: '2 945' },
-  2 : { pp: 8093, globalRank: '2 924', countryRank: 41, accuracy: '94,69%', playCount: '20 889' },
-}
+const mode = ref('mania');
+const data = stats['osu'];
 
 const currentMode = computed(() => {
-  return data[mode.value];
+  return data.rating[mode.value];
 });
 </script>
 

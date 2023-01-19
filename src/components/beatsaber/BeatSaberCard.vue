@@ -3,19 +3,19 @@
     <img class="rounded-full border-2 border-blue-400" :src="avatar" width="112" alt="Avatar" />
     <div class="flex flex-col ml-3">
       <div class="flex items-center">
-        <span class="text-blue-400 text-lg font-bold">Kyzoid</span>
+        <span class="text-blue-400 text-lg font-bold">{{ data.username }}</span>
         <div class="divider mx-3"></div>
-        <span class="font-bold pp">2,968.90pp</span>
+        <span class="font-bold pp">{{ data.rating }}pp</span>
       </div>
       <div class="flex">
         <div class="flex items-center">
           <img :src="earth" alt="Global flag" width="15" />
-          <span class="ml-1 rank text-sm">#12309</span>
+          <span class="ml-1 rank text-sm">#{{ data.globalRank }}</span>
         </div>
         <div class="divider mx-3"></div>
         <div class="flex items-center">
           <img :src="flag" alt="France flag" width="18" />
-          <span class="ml-1 rank text-sm">#689</span>
+          <span class="ml-1 rank text-sm">#{{ data.countryRank }}</span>
         </div>
       </div>
       <div class="flex flex-wrap mt-3">
@@ -30,6 +30,9 @@ import avatar from '/beatsaber/avatar.jpg';
 import flag from '/beatsaber/fr.svg';
 import earth from '/beatsaber/earth.png';
 import Chip from './Chip.vue';
+import stats from '/src/stats.json';
+
+const data = stats['beatsaber'];
 </script>
 
 <style scoped>
