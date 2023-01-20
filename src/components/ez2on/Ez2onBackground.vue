@@ -1,11 +1,11 @@
 <template>
   <div class="bg-main relative h-full w-full">
-    <!-- <video :src="video" autoplay loop muted></video> -->
+    <video :src="video" autoplay loop muted></video>
   </div>
 </template>
 
 <script setup>
-// import video from '/ez2on/Multiplayer_PP.webm';
+import video from '/ez2on/Multiplayer_PP.webm';
 
 defineProps({
   mode: String
