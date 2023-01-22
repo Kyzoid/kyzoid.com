@@ -1,31 +1,30 @@
 <template>
   <div class="card">
-    <img class="crew" :src="crew" alt="Crew" />
-    <img class="card-bg w-full" :src="card" alt="Card background" />
-    <img class="apcard" :src="apcard" alt="Card background" />
-    <img class="dan" width="105" :src="dan" alt="Dan" />
+    <img class="card-bg w-full" :src="frame" alt="Card background" />
+    <img class="apcard" :src="apcard" width="100" alt="Card background" />
+    <img class="dan" width="105" :src="`/sdvx/dan/${data.dan}.png`" alt="Dan" />
     <div class="volforce flex items-end">
-      <div class="flex flex-col item-center justify-center">
-        <img width="44" :src="volforce" alt="Volforce" />
-        <img class="volforce-force -mt-2" :src="`/sdvx/volforce/force/${force()}.png`" alt="Volforce stars">
+      <div class="flex flex-col item-center justify-center -mt-0.5 mr-1">
+        <img width="40" :src="`/sdvx/volforce/${volforce()}.png`" :alt="`Volforce ${volforce()}`" />
+        <img class="volforce-force" :src="`/sdvx/volforce/force/${force()}.png`" alt="Volforce stars">
       </div>
       <div class="flex flex-col">
-        <span class="uppercase volforce-label tracking-wider">Volforce</span>
-        <span class="-mt-1 tracking-wider">{{ data.rating }}</span>
+        <span class="uppercase volforce-label tracking-widest">Volforce</span>
+        <span class="-mt-1 tracking-wider font-medium">{{ data.rating }}</span>
       </div>
     </div>
+    
     <span class="title">{{ data.title }}</span>
-    <span class="name uppercase">{{ data.username }}</span>
+    <span class="name uppercase font-medium">{{ data.username }}</span>
+    <span class="id uppercase">{{ data.id }}</span>
   </div>
+  
 </template>
 
 <script setup>
-import crew from '/sdvx/crew.png';
-import card from '/sdvx/card.png';
 import apcard from '/sdvx/apcard.png';
-import volforce from '/sdvx/volforce/6.png';
-import dan from '/sdvx/dan/none.png';
 import stats from '/src/stats.json';
+import frame from '/sdvx/frame.svg';
 
 const data = stats["SDVX"];
 const force = () => {
@@ -34,6 +33,15 @@ const force = () => {
   if (decimals < 500 ) return 2;
   if (decimals < 750 ) return 3;
   return 4;
+}
+
+const volforce = () => {
+  const value = Number(data.rating);
+  if (value <= 17) return 6;
+  if (value <= 18) return 7;
+  if (value <= 19) return 8;
+  if (value <= 20) return 9;
+  return 10;
 }
 </script>
 
@@ -46,14 +54,8 @@ const force = () => {
   height: 10px;
 }
 
-.crew {
-  position: absolute;
-  top: -5.5rem;
-  right: -1rem;
-}
-
 .card {
-  width: 388px;
+  width: 450px;
 }
 .card-bg {
   opacity: 1;
@@ -62,33 +64,40 @@ const force = () => {
 
 .apcard {
   position: absolute;
-  top: 1.9rem;
-  left: 0.55rem;
+  top: 1.96rem;
+  left: 1.75rem;
   transform: scale(0.97);
 }
 
 .name {
   position: absolute;
-  top: 5.55rem;
-  left: 10rem;
+  top: 3.85rem;
+  left: 9.5rem;
+  letter-spacing: 0.1em;
+}
+
+.id {
+  position: absolute;
+  top: 5.45rem;
+  left: 9.55rem;
   letter-spacing: 0.1em;
 }
 
 .title {
   position: absolute;
-  top: 3.75rem;
-  left: 10rem;
+  top: 2.15rem;
+  left: 9.4rem;
 }
 
 .dan {
   position: absolute;
-  bottom: 2.1rem;
-  left: 8.8rem;
+  bottom: 2.5rem;
+  left: 9.4rem;
 }
 
 .volforce {
   position: absolute;
-  bottom: 1.75rem;
-  right: 1.6rem;
+  bottom: 2.2rem;
+  right: 4.2rem;
 }
 </style>
