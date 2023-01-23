@@ -1,5 +1,5 @@
 <template>
-  <div class="profile shadow rounded-2xl p-4">
+  <div class="ez2on-card shadow rounded-2xl p-4">
     <div>
       <div class="flex items-center">
         <img class="rounded-full mr-4 avatar" :src="avatar" alt="Avatar" width="66">
@@ -53,8 +53,7 @@ const data = stats['ez2on'];
   box-shadow: 0 0 6px #00E4FF;
 }
 
-.profile {
-  width: max-content;
+.ez2on-card {
   background-color: rgba(0, 0, 0, 0.5);
 }
 </style>

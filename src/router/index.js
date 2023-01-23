@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import MaimaiDeluxe from '/src/components/MaimaiDeluxe.vue';
 import MaimaiFinale from '/src/components/MaimaiFinale.vue';
 import Home from '/src/components/Home.vue';
+import Carousel from '/src/components/Carousel.vue';
 import SDVX from '/src/components/SDVX.vue';
 import Popn from '/src/components/Popn.vue';
 import BeatSaber from '/src/components/BeatSaber.vue';
@@ -17,6 +18,11 @@ const routes = [
         path: '/',
         name: 'Home',
         component: Home,
+    },
+    {
+        path: '/carousel',
+        name: 'Carousel',
+        component: Carousel,
     },
     {
         path: '/maimai-deluxe',

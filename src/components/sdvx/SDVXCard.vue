@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="sdvx-card relative">
     <img class="card-bg w-full" :src="frame" alt="Card background" />
     <img class="apcard" :src="apcard" width="100" alt="Card background" />
     <img class="dan" width="105" :src="`/sdvx/dan/${data.dan}.png`" alt="Dan" />
@@ -54,7 +54,7 @@ const volforce = () => {
   height: 10px;
 }
 
-.card {
+.sdvx-card {
   width: 450px;
 }
 .card-bg {

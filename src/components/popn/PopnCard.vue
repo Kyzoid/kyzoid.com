@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="profile rounded-2xl text-black px-3">
-      <div class="profile-inner py-2">
-        <div class="relative title flex justify-center items-center mx-2 mb-1">
+    <div class="popn-card rounded-2xl text-black px-3">
+      <div class="card-inner flex flex-col py-2">
+        <div class="relative title flex justify-center items-center mx-2 mb-1" style="width: 143px">
           <h2 class="font-bold z-30 ml-3">{{ data.username }}</h2>
           <img class="absolute z-30 left-4" width="28" :src="character" alt="Character">
-          <img class="z-20" :src="bgTitle" alt="">
+          <img class="z-20" :src="bgTitle" alt="Background">
         </div>
-        <div class="flex flex-col bg-white px-3 py-0.5">
+        <div class="flex flex-col w-full bg-white px-3 py-0.5">
           <span class="id-label">ポプともID</span>
           <span class="id-value text-lg">{{ data.id }}</span>
         </div>
@@ -48,7 +48,7 @@ const data = stats["popn"];
   letter-spacing: 0.05em;
 }
 
-.profile {
+.popn-card {
   font-weight: 600;
   border: 3px solid black;
   background-image: linear-gradient(135deg, #e9c874 10%, #ffffc7 10%, #ffffc7 50%, #e9c874 50%, #e9c874 60%, #ffffc7 60%, #ffffc7 100%);
@@ -66,11 +66,12 @@ const data = stats["popn"];
   font-size: 10px;
 }
 
-.class .class-rating, .id-value {
+.class .class-rating,
+.id-value {
   margin-top: -0.3rem;
 }
 
-.profile-inner {
+.card-inner {
   background-color: #FFFFC7;
 }
 

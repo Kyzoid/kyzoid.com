@@ -1,31 +1,33 @@
 <template>
-  <div class="card p-6 bg-white rounded-3xl text-black flex items-start">
-    <img :src="avatar" alt="Avatar" width="112">
+  <div class="maimai-deluxe-card p-6 bg-white rounded-3xl text-black">
+    <div class="flex items-start">
+      <img :src="avatar" alt="Avatar" width="112">
 
-    <div class="w-72 flex flex-col shrink-0 ml-2">
-      <div class="relative trophy">
-        <img class="absolute" :src="trophySilver" alt="Trophy silver">
-        <span class="absolute text-white text-sm">{{ data.title }}</span>
-      </div>
-
-      <div class="flex mt-2 items-start">
-        <span class="name bg-white border pl-2 py-0.5 border-gray-300 rounded w-full mr-2">{{ data.username }}</span>
-        <div class="relative rating shrink-0">
-          <img class="absolute" :src="rating" alt="Rating purple">
-          <span class="absolute font-bold text-sm">{{ data.rating }}</span>
+      <div class="w-full flex flex-col ml-2">
+        <div class="relative trophy">
+          <img class="absolute" :src="trophySilver" alt="Trophy silver">
+          <span class="absolute text-white text-sm">{{ data.title }}</span>
         </div>
-      </div>
 
-      <div class="border-dotted border-2 border-gray-300 my-2"></div>
-
-      <div class="flex items-center justify-between">
-        <div class="flex items-center">
-          <img class="mr-2 rank-img" :src="`/maimai/course_rank_${data.courseRank}.png`" alt="Course rank" />
-          <img class="rank-img" :src="`/maimai/class_rank_${data.classRank}.png`" alt="Class rank" />
+        <div class="flex mt-2 items-start">
+          <span class="name bg-white border pl-2 py-0.5 border-gray-300 rounded w-full mr-2">{{ data.username }}</span>
+          <div class="relative rating shrink-0">
+            <img class="absolute" :src="rating" alt="Rating purple">
+            <span class="absolute font-bold text-sm">{{ data.rating }}</span>
+          </div>
         </div>
-        <div class="flex items-center">
-          <img class="mr-1" width="24" :src="star" alt="Star" />
-          <span>×35</span>
+
+        <div class="border-dotted border-2 border-gray-300 my-2"></div>
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <img class="mr-2 rank-img" :src="`/maimai/course_rank_${data.courseRank}.png`" alt="Course rank" />
+            <img class="rank-img" :src="`/maimai/class_rank_${data.classRank}.png`" alt="Class rank" />
+          </div>
+          <div class="flex items-center">
+            <img class="mr-1" width="24" :src="star" alt="Star" />
+            <span>×35</span>
+          </div>
         </div>
       </div>
     </div>
@@ -76,7 +78,6 @@ const data = stats["maimaiDeluxe"];
 }
 
 .trophy {
-  width: 100%;
   height: 24px;
 }
 
@@ -96,12 +97,12 @@ const data = stats["maimaiDeluxe"];
   transform: translate(-50%, -50%);
 }
 
-.card {
+.maimai-deluxe-card {
   position: relative;
   box-shadow: 0.75rem 0.75rem 0px 0px rgb(0 0 0 / 20%);
 }
 
-.card::before, .card::after {
+.maimai-deluxe-card::before, .maimai-deluxe-card::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -111,13 +112,13 @@ const data = stats["maimaiDeluxe"];
   
 }
 
-.card::before {
+.maimai-deluxe-card::before {
   background-color: #ff8db0;
   top: 0;
   border-radius: 0 0 1rem 1rem;
 }
 
-.card::after {
+.maimai-deluxe-card::after {
   background-color: #def447;
   bottom: 0;
   border-radius: 1rem 1rem 0 0;
