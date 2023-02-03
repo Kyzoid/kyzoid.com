@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import logo from '/etterna/logo.ico';
+import logo from '/etterna/logo.png';
 import EtternaCard from './etterna/EtternaCard.vue';
 import EtternaBackground from './etterna/EtternaBackground.vue';
 

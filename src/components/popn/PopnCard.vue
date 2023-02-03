@@ -75,15 +75,15 @@ const data = stats["popn"];
   background-color: #FFFFC7;
 }
 
-.profile:before,
-.profile:after {
+.popn-card:before,
+.popn-card:after {
   content: "";
   position: absolute;
   width: 33px;
   height: 32px;
 }
 
-.profile:before {
+.popn-card:before {
   background: url("/popn/pipe.png");
   background-repeat: no-repeat;
   transform: rotate(90deg) translate(-25%, -25%);
@@ -91,7 +91,7 @@ const data = stats["popn"];
   right: 0;
 }
 
-.profile:after {
+.popn-card:after {
   background: url("/popn/pipe.png");
   background-repeat: no-repeat;
   transform: rotate(-90deg) translate(-25%, -25%);

@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import logo from '/beatsaber/logo.png';
+import logo from '/beatsaber/logo.svg';
 import BeatSaberCard from './beatsaber/BeatSaberCard.vue';
 import BeatSaberBackground from './beatsaber/BeatSaberBackground.vue';
 

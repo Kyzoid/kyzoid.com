@@ -18,7 +18,6 @@
     <span class="name uppercase font-medium">{{ data.username }}</span>
     <span class="id uppercase">{{ data.id }}</span>
   </div>
-  
 </template>
 
 <script setup>
