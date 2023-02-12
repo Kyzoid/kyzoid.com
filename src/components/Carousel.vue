@@ -1,18 +1,8 @@
 <template>
-  <div class="flex justify-center select-none items-center h-full">
-    <div class="carousel-wrapper absolute bottom-10 z-20">
-      <Swiper
-        :slides-per-view="5"
-        :centeredSlides="true"
-        :space-between="50"
-        :loop="true"
-        :initial-slide="5"
-        :simulateTouch="true"
-        :slideToClickedSlide="true"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
-        watch-slides-progress
-      >
+  <div class="flex justify-center select-none items-center h-full overflow-hidden">
+    <div class="carousel-wrapper masked-overflow absolute bottom-10 z-20">
+      <Swiper :breakpoints="breakpoints" :centeredSlides="true" :loop="false" :initial-slide="0" :simulateTouch="true"
+        :slideToClickedSlide="true" @swiper="onSwiper" @slideChange="onSlideChange" watch-slides-progress>
         <SwiperSlide class="slide"><img :src="beatsaber" alt="Beatsaber Logo" /></SwiperSlide>
         <SwiperSlide class="slide"><img :src="chunithm" alt="Chunithm Logo" /></SwiperSlide>
         <SwiperSlide class="slide"><img :src="etterna" alt="Etterna Logo" /></SwiperSlide>
@@ -27,30 +17,15 @@
       </Swiper>
     </div>
     <div class="card-wrapper mx-4 z-10">
-      <BeatSaberCard :class="activeGame === 0 ? '' : 'hidden'" mode="compact" />
-      <ChunithmCard :class="activeGame === 1 ? '' : 'hidden'" mode="compact" />
-      <EtternaCard :class="activeGame === 2 ? '' : 'hidden'" mode="compact" />
-      <Ez2onCard :class="activeGame === 3 ? '' : 'hidden'" mode="compact" />
-      <JubeatCard :class="activeGame === 4 ? '' : 'hidden'" mode="compact" />
-      <MaimaiDeluxeCard :class="activeGame === 5 ? '' : 'hidden'" mode="compact" />
-      <MaimaiFinaleCard :class="activeGame === 6 ? '' : 'hidden'" mode="compact" />
-      <OsuCard :class="activeGame === 7 ? '' : 'hidden'" mode="compact" />
-      <PopnCard :class="activeGame === 8 ? '' : 'hidden'" mode="compact" />
-      <QuaverCard :class="activeGame === 9 ? '' : 'hidden'" mode="compact" />
-      <SDVXCard :class="activeGame === 10 ? '' : 'hidden'" mode="compact" />
+      <Transition name="fade" mode="out-in">
+        <component :is="currentComponent().card" mode="compact" />
+      </Transition>
     </div>
+    
     <div class="fixed z-0 w-full h-full">
-      <BeatSaberBackground :class="activeGame === 0 ? '' : 'hidden'" />
-      <ChunithmBackground :class="activeGame === 1 ? '' : 'hidden'" />
-      <EtternaBackground :class="activeGame === 2 ? '' : 'hidden'" />
-      <Ez2onBackground :class="activeGame === 3 ? '' : 'hidden'" />
-      <JubeatBackground :class="activeGame === 4 ? '' : 'hidden'" />
-      <MaimaiDeluxeBackground :class="activeGame === 5 ? '' : 'hidden'" />
-      <MaimaiFinaleBackground :class="activeGame === 6 ? '' : 'hidden'" />
-      <OsuBackground :class="activeGame === 7 ? '' : 'hidden'" />
-      <PopnBackground :class="activeGame === 8 ? '' : 'hidden'" />
-      <QuaverBackground :class="activeGame === 9 ? '' : 'hidden'" />
-      <SDVXBackground :class="activeGame === 10 ? '' : 'hidden'" />
+      <Transition name="fade" mode="out-in">
+        <component :is="currentComponent().background" />
+      </Transition>
     </div>
   </div>
 </template>
@@ -58,7 +33,7 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
-import { nextTick, ref } from 'vue';
+import { ref } from 'vue';
 
 // cards
 import BeatSaberCard from './beatsaber/BeatSaberCard.vue';
@@ -98,15 +73,49 @@ import osu from '/osu/logo.png';
 import popn from '/popn/logo.webp';
 import quaver from '/quaver/logo.png';
 import sdvx from '/sdvx/logo.png';
+import iidx from '/iidx/logo.png';
 
 const activeGame = ref(0);
-const changeActiveGame = (value) => {
-  if (activeGame.value === 0 && value === -1) {
-    activeGame.value = 10;
-  } else if (activeGame.value === 10 && value === 1) {
-    activeGame.value = 0;
-  } else {
-    activeGame.value += value;
+
+const components = [
+  { "gameId": 0, "card": BeatSaberCard, "background": BeatSaberBackground },
+  { "gameId": 1, "card": ChunithmCard, "background": ChunithmBackground },
+  { "gameId": 2, "card": EtternaCard, "background": EtternaBackground },
+  { "gameId": 3, "card": Ez2onCard, "background": Ez2onBackground },
+  { "gameId": 4, "card": JubeatCard, "background": JubeatBackground },
+  { "gameId": 5, "card": MaimaiDeluxeCard, "background": MaimaiDeluxeBackground },
+  { "gameId": 6, "card": MaimaiFinaleCard, "background": MaimaiFinaleBackground },
+  { "gameId": 7, "card": OsuCard, "background": OsuBackground },
+  { "gameId": 8, "card": PopnCard, "background": PopnBackground },
+  { "gameId": 9, "card": QuaverCard, "background": QuaverBackground },
+  { "gameId": 10, "card": SDVXCard, "background": SDVXBackground },
+];
+
+const currentComponent = () => {
+  return components.find(c => c.gameId === activeGame.value);
+}
+
+const breakpoints = {
+  // >= 320px
+  320: {
+    slidesPerView: 3,
+    spaceBetween: 50
+  },
+  480: {
+    slidesPerView: 3,
+    spaceBetween: 50
+  },
+  640: {
+    slidesPerView: 5,
+    spaceBetween: 50
+  },
+  1024: {
+    slidesPerView: 5,
+    spaceBetween: 50
+  },
+  1280: {
+    slidesPerView: 5,
+    spaceBetween: 50
   }
 }
 
@@ -119,18 +128,31 @@ const onSlideChange = ({ realIndex }) => {
 }
 </script>
 
-<style scoped>
-.carousel-wrapper {
-  max-width: 50vw;
+<style scoped lang="scss">
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.1s ease;
 }
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
 .swiper-slide {
   opacity: 0;
-  transition: .3s opacity linear; 
+  transition: .3s opacity linear;
   align-self: center;
   /* border: 1px solid green; */
 }
+
 .swiper-slide-visible {
-  opacity: .40;
+  opacity: .20;
   cursor: pointer;
 }
 
@@ -139,24 +161,20 @@ const onSlideChange = ({ realIndex }) => {
   cursor: default;
 }
 
-.swiper-slide-prev, .swiper-slide-next {
-  opacity: .60;
+.swiper-slide-prev,
+.swiper-slide-next {
+  opacity: .40;
 }
 
 .swiper-slide img {
-  max-height: 70px;
-  max-width: 150px;
-  transition: .3s transform ease-out; 
-}
-
-.swiper {
-  /* border: 1px solid red; */
+  max-height: 63px;
+  max-width: 135px;
+  transition: .3s transform ease-out;
 }
 
 .swiper-slide-active {
   transform: scale(1);
 }
-
 
 .slide {
   display: flex;
@@ -171,7 +189,41 @@ const onSlideChange = ({ realIndex }) => {
 .menu {
   position: absolute;
 }
+
 .card-wrapper {
   width: 450px;
+}
+
+
+
+@media (min-width: 320px) {
+  .carousel-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) {
+  .carousel-wrapper {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 640px) {
+  .carousel-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-wrapper {
+    width: 50rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .carousel-wrapper {
+    width: 50rem;
+  }
 }
 </style>
