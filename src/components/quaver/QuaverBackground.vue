@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main relative h-full w-full">
+  <div class="bg-quaver h-full w-full">
   </div>
 </template>
 
@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <style scoped>
-.bg-main {
+.bg-quaver {
   background-color: #1A1A1A;
 }
 </style>

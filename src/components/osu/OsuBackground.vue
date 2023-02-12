@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main relative h-full w-full">
+  <div class="bg-osu h-full w-full">
     <div class="triangles"></div>
   </div>
 </template>
@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <style scoped>
-.bg-main { 
+.bg-osu { 
   background-color: #1C1719;
 }
 

@@ -17,14 +17,14 @@
       </Swiper>
     </div>
     <div class="card-wrapper mx-4 z-10">
-      <Transition name="fade" mode="out-in">
-        <component :is="currentComponent().card" mode="compact" />
+      <Transition :name="slideTransition" mode="out-in">
+        <component class="left" :is="currentComponent().card" mode="compact" />
       </Transition>
     </div>
     
     <div class="fixed z-0 w-full h-full">
-      <Transition name="fade" mode="out-in">
-        <component :is="currentComponent().background" />
+      <Transition name="fade">
+        <component class="absolute" :is="currentComponent().background" />
       </Transition>
     </div>
   </div>
@@ -76,6 +76,7 @@ import sdvx from '/sdvx/logo.png';
 import iidx from '/iidx/logo.png';
 
 const activeGame = ref(0);
+const slideTransition = ref('slide-left');
 
 const components = [
   { "gameId": 0, "card": BeatSaberCard, "background": BeatSaberBackground },
@@ -120,18 +121,65 @@ const breakpoints = {
 }
 
 const onSwiper = (swiper) => {
-  console.log(swiper)
+  console.log('dza')
 }
 
 const onSlideChange = ({ realIndex }) => {
+  slideTransition.value = (realIndex > activeGame.value) ? 'slide-left' : 'slide-right';
   activeGame.value = realIndex;
 }
 </script>
 
 <style scoped lang="scss">
+// SLIDE LEFT ===================================
+.slide-left-enter-active,
+.slide-left-leave-active {
+    transition: all .3s ease;
+}
+
+.slide-left-enter-from {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-left-leave-to {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.slide-left-enter-to,
+.slide-left-leave-from {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+// SLIDE RIGHT ===================================
+.slide-right-enter-active,
+.slide-right-leave-active {
+    transition: all .3s ease;
+}
+
+.slide-right-enter-from {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.slide-right-enter-to,
+.slide-left-leave-from {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+// FADE ==========================================
+
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.1s ease;
+  transition: opacity .5s linear;
 }
 
 .fade-enter-from,
@@ -139,6 +187,10 @@ const onSlideChange = ({ realIndex }) => {
   opacity: 0;
 }
 
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
 .carousel-wrapper {
   width: 100%;
   filter: drop-shadow(2px 4px 6px black);
@@ -204,14 +256,14 @@ const onSlideChange = ({ realIndex }) => {
 
 @media (min-width: 480px) {
   .carousel-wrapper {
-    width: 100%;
+    width: 90%;
   }
 }
 
 
 @media (min-width: 640px) {
   .carousel-wrapper {
-    width: 100%;
+    width: 90%;
   }
 }
 

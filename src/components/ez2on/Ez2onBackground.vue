@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main relative h-full w-full">
+  <div class="bg-ez2on h-full w-full">
     <video :src="video" autoplay loop muted></video>
   </div>
 </template>
@@ -21,7 +21,7 @@ video {
   height: 100%;
   object-fit: cover;
 }
-.bg-main {
+.bg-ez2on {
   background: url("/ez2on/Background_PP.png");
   background-repeat: no-repeat;
   background-size: cover;
