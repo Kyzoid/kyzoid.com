@@ -6,7 +6,7 @@
     <div class="volforce flex items-end">
       <div class="flex flex-col item-center justify-center -mt-0.5 mr-1">
         <img width="40" :src="`/sdvx/volforce/${volforce()}.png`" :alt="`Volforce ${volforce()}`" />
-        <img class="volforce-force" :src="`/sdvx/volforce/force/${force()}.png`" alt="Volforce stars">
+        <img class="volforce-force -mt-1" :src="`/sdvx/volforce/force/${force()}.png`" alt="Volforce stars">
       </div>
       <div class="flex flex-col">
         <span class="uppercase volforce-label tracking-widest">Volforce</span>
@@ -96,7 +96,7 @@ const volforce = () => {
 
 .volforce {
   position: absolute;
-  bottom: 2.2rem;
+  bottom: 2.3rem;
   right: 4.2rem;
 }
 </style>

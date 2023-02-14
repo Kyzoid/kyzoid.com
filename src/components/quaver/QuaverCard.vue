@@ -19,7 +19,7 @@
 
         <div class="stats text-xs p-2 rounded-lg mt-4">
           <div class="px-2 text-sm flex justify-between items-center">
-            <span>Overall Rating</span>
+            <span class="mr-12">Overall Rating</span>
             <span class="text-right">{{ currentMode.rating }}</span>
           </div>
           <div class="stats-divider my-1" data-v-f0db6588=""></div>

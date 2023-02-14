@@ -13,7 +13,7 @@
       </div>
     </div>
     <img class="rounded shadow z-10" :src="avatar" width="123" alt="Avatar" />
-    <div class="flex flex-col w-full">
+    <div class="flex flex-col w-min">
       <div class="rating stream w-full mb-0.5" :style="`width: ${getPercent(data.rating.stream)}%`">
         <span class="text-xs font-medium pl-1 pb-0.5">{{ data.rating.stream }}</span>
       </div>
@@ -54,6 +54,10 @@ const getPercent = (rating) => {
 </script>
 
 <style scoped>
+.w-min {
+  width: 8rem;
+}
+
 .rating {
   height: 14px;
   position: relative;

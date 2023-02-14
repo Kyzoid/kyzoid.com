@@ -6,7 +6,7 @@
       <h2 class="uppercase username font-bold text-xl">{{  data.username  }}</h2>
       <div class="separator mt-4 mb-2"></div>
       <div class="flex justify-between items-center">
-        <span class="text-sm">Jubility</span>
+        <span class="text-sm mr-32">Jubility</span>
         <span class="text-lg">{{ data.rating }}</span>
       </div>
       <div class="flex justify-between items-center">

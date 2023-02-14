@@ -20,7 +20,7 @@
         <div class="border-dotted border-2 border-gray-300 my-2"></div>
 
         <div class="flex items-center justify-between">
-          <div class="flex items-center">
+          <div class="flex items-center mr-12">
             <img class="mr-2 rank-img" :src="`/maimai/course_rank_${data.courseRank}.png`" alt="Course rank" />
             <img class="rank-img" :src="`/maimai/class_rank_${data.classRank}.png`" alt="Class rank" />
           </div>
