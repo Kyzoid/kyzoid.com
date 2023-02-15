@@ -8,7 +8,7 @@
         <SwiperSlide class="slide" data-name="maimaiDeluxe"><img :src="maimaiDeluxe" alt="Maimai Deluxe Logo" /></SwiperSlide>
         <!-- <SwiperSlide class="slide" data-name="chunithm"><img :src="chunithm" alt="Chunithm Logo" /></SwiperSlide> -->
         <SwiperSlide class="slide" data-name="ez2on"><img :src="ez2on" alt="Ez2On Logo" /></SwiperSlide>
-        <SwiperSlide class="slide" data-name="popn"><img :src="popn" alt="Pop'N Music Logo" /></SwiperSlide>
+        <!-- <SwiperSlide class="slide" data-name="popn"><img :src="popn" alt="Pop'N Music Logo" /></SwiperSlide> -->
         <SwiperSlide class="slide" data-name="jubeat"><img :src="jubeat" alt="Jubeat Logo" /></SwiperSlide>
         <SwiperSlide class="slide" data-name="beatsaber"><img :src="beatsaber" alt="Beatsaber Logo" /></SwiperSlide>
         <!-- <SwiperSlide class="slide" data-name="iidx"><img :src="iidx" alt="IIDX Logo" /></SwiperSlide> -->
@@ -87,13 +87,13 @@ const components = [
   { "id": 1, "name": "maimaiDeluxe", "card": MaimaiDeluxeCard, "background": MaimaiDeluxeBackground },
   // { "id": 0, "name": "chunithm", "card": ChunithmCard, "background": ChunithmBackground },
   { "id": 2, "name": "ez2on", "card": Ez2onCard, "background": Ez2onBackground },
-  { "id": 3, "name": "popn", "card": PopnCard, "background": PopnBackground },
-  { "id": 4, "name": "jubeat", "card": JubeatCard, "background": JubeatBackground },
-  { "id": 5, "name": "beatsaber", "card": BeatSaberCard, "background": BeatSaberBackground },
+  // { "id": 3, "name": "popn", "card": PopnCard, "background": PopnBackground },
+  { "id": 3, "name": "jubeat", "card": JubeatCard, "background": JubeatBackground },
+  { "id": 4, "name": "beatsaber", "card": BeatSaberCard, "background": BeatSaberBackground },
   // { "id": 0, "name": "maimaiFinale", "card": MaimaiFinaleCard, "background": MaimaiFinaleBackground },
-  { "id": 6, "name": "osu", "card": OsuCard, "background": OsuBackground },
-  { "id": 7, "name": "quaver", "card": QuaverCard, "background": QuaverBackground },
-  { "id": 8, "name": "etterna", "card": EtternaCard, "background": EtternaBackground },
+  { "id": 5, "name": "osu", "card": OsuCard, "background": OsuBackground },
+  { "id": 6, "name": "quaver", "card": QuaverCard, "background": QuaverBackground },
+  { "id": 7, "name": "etterna", "card": EtternaCard, "background": EtternaBackground },
   // { "id": 0, "name": "iidx", "card": IIDXCard, "background": IIDXBackground },
 ];
 
@@ -226,14 +226,17 @@ const onSlideChange = ({ activeIndex, previousIndex, slides }) => {
 
 .swiper-slide {
   opacity: 0;
-  transition: .3s opacity linear;
+  transition: .15s opacity linear;
   align-self: center;
-  /* border: 1px solid green; */
 }
 
 .swiper-slide-visible {
-  opacity: .20;
+  opacity: .30;
   cursor: pointer;
+}
+
+.swiper-slide-visible:hover {
+  opacity: 1 !important;
 }
 
 .swiper-slide-active {
@@ -243,7 +246,7 @@ const onSlideChange = ({ activeIndex, previousIndex, slides }) => {
 
 .swiper-slide-prev,
 .swiper-slide-next {
-  opacity: .40;
+  opacity: .60;
 }
 
 .swiper-slide img {

@@ -1,23 +1,11 @@
 <template>
   <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-0">
-    <div class="relative h-80">
-      <MaimaiDeluxe mode="compact" class="relative h-full w-full" />
-    </div>
-
-    <div class="relative overflow-hidden h-80">
-      <Chunithm mode="compact" class="h-full w-full" />
-    </div>
-
-    <div class="relative h-80 overflow-hidden">
-      <MaimaiFinale mode="compact" />
-    </div>
-
     <div class="relative h-80 overflow-hidden">
       <SDVX mode="compact" />
     </div>
 
     <div class="relative h-80">
-      <Popn mode="compact" />
+      <MaimaiDeluxe mode="compact" class="relative h-full w-full" />
     </div>
 
     <div class="relative h-80">

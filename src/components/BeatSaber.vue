@@ -26,6 +26,7 @@ defineProps({
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: max-content;
 }
 
 .logo:hover {
@@ -41,7 +42,7 @@ defineProps({
 .logo-compact {
   top: .5rem;
   right: .5rem;
-  width: 100px;
+  width: 50px;
 }
 
 .logo {

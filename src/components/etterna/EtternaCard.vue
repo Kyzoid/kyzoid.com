@@ -49,7 +49,7 @@ const data = stats['etterna'];
 
 const getPercent = (rating) => {
   const highestRating = data.rating.handstream;
-  return rating/highestRating * 100;
+  return rating / highestRating * 100;
 }
 </script>
 
@@ -63,7 +63,7 @@ const getPercent = (rating) => {
   position: relative;
 }
 
-.rating > span {
+.rating>span {
   position: absolute;
   top: 50%;
   right: 0;
