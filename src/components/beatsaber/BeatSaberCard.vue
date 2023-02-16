@@ -1,5 +1,5 @@
 <template>
-  <div class="profile w-96 p-4 rounded-lg flex items-center">
+  <div class="beatsaber-card p-4 rounded-lg flex items-center">
     <img class="rounded-full border-2 border-blue-400" :src="avatar" width="112" alt="Avatar" />
     <div class="flex flex-col ml-3">
       <div class="flex items-center">
@@ -36,7 +36,7 @@ const data = stats['beatsaber'];
 </script>
 
 <style scoped>
-.profile {
+.beatsaber-card {
   background-color: rgba(32, 32, 50, 0.8);
   box-shadow: 2px 2px 6px rgba(12, 12, 30, 0.8);
 }

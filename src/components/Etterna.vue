@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import logo from '/etterna/logo.ico';
+import logo from '/etterna/logo.png';
 import EtternaCard from './etterna/EtternaCard.vue';
 import EtternaBackground from './etterna/EtternaBackground.vue';
 
@@ -26,6 +26,7 @@ defineProps({
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: max-content;
 }
 
 .logo:hover {
@@ -41,7 +42,7 @@ defineProps({
 .logo-compact {
   top: .5rem;
   right: .5rem;
-  width: 50px;
+  width: 75px;
 }
 
 .logo {

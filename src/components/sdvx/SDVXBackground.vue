@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main relative h-full w-full" :class="[(mode === 'page' ? '' : 'bg-main-compact')]">
+  <div class="bg-sdvx h-full w-full" :class="[(mode === 'page' ? '' : 'bg-main-compact')]">
     <div class="sdvx-icon-wrapper">
       <img class="sdvx-icon z-10" :src="bgSdvx" alt="Background SDVX">
     </div>
@@ -28,15 +28,15 @@ defineProps({
   animation: rotateAnimation 10s linear infinite;
 }
 
-.bg-main {
+.bg-sdvx {
   background-image: url("/sdvx/bg_grd_left.png"), url("/sdvx/bg_grd_right.png"), url("/sdvx/bg_main02.png"), url("/sdvx/bg_main01.png");
   background-repeat: repeat-y, repeat-y, repeat, repeat-x;
   background-position: left, right, top left, bottom;
   background-size: auto, auto, auto, auto;
 }
 
-.bg-main:before,
-.bg-main:after {
+.bg-sdvx:before,
+.bg-sdvx:after {
   content: "";
   position: absolute;
   left: 0;
@@ -44,7 +44,7 @@ defineProps({
   height: 33px;
 }
 
-.bg-main:before {
+.bg-sdvx:before {
   top: 0;
   background-image: url("/sdvx/frame_top_left.png"), url("/sdvx/frame_top_right.png"), url("/sdvx/frame_top_bar.png"), url("/sdvx/frame_top_title.png");
   background-repeat: no-repeat, no-repeat, repeat-x, no-repeat;
@@ -52,7 +52,7 @@ defineProps({
   background-position: top left -150px, top right -150px, top center, top center;
 }
 
-.bg-main:after {
+.bg-sdvx:after {
   bottom: 0;
   background-image: url("/sdvx/frame_btm_left.png"), url("/sdvx/frame_btm_right.png"), url("/sdvx/frame_btm_bar.png"), url("/sdvx/frame_btm_title.png");
   background-repeat: no-repeat, no-repeat, repeat-x, no-repeat;
@@ -89,11 +89,11 @@ defineProps({
 }
 
 @media only screen and (min-width: 900px) {
-  .bg-main:before {
+  .bg-sdvx:before {
     background-size: auto 33px, auto 33px, auto 33px, auto 33px;
   }
 
-  .bg-main:after {
+  .bg-sdvx:after {
     background-size: auto 33px, auto 33px, auto 33px, auto 33px;
   }
 }

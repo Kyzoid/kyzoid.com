@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main relative h-full w-full">
+  <div class="bg-saber h-full w-full">
   </div>
 </template>
 
@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <style scoped>
-.bg-main {
+.bg-saber {
   background: url("/beatsaber/bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;

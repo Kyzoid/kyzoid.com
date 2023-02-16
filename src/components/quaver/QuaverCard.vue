@@ -1,5 +1,5 @@
 <template>
-  <div class="profile">
+  <div class="quaver-card">
     <div class="flex justify-end">
       <div class="mode-switch mb-2" :class="[ (mode === '4K') ? 'mode-active-4' : 'mode-active-7']">
         <div class="thumb"></div>
@@ -7,7 +7,7 @@
         <div class="mode mode-7" @click="mode = '7K'">7K</div>
       </div>
     </div>
-    <div class="w-96 flex items-start profile-card p-4 rounded">
+    <div class="flex items-start profile-card p-4 rounded">
       <img class="rounded-lg avatar" width="112" :src="avatar" alt="Avatar" />
       <div class="flex flex-col justify-between text-sm ml-4 w-full">
         <div class="flex justify-between items-start">
@@ -19,7 +19,7 @@
 
         <div class="stats text-xs p-2 rounded-lg mt-4">
           <div class="px-2 text-sm flex justify-between items-center">
-            <span>Overall Rating</span>
+            <span class="mr-12">Overall Rating</span>
             <span class="text-right">{{ currentMode.rating }}</span>
           </div>
           <div class="stats-divider my-1" data-v-f0db6588=""></div>

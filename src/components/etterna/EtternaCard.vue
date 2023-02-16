@@ -1,5 +1,5 @@
 <template>
-  <div class="profile flex items-center">
+  <div class="etterna-card flex items-center">
     <div class="flex flex-col items-end mr-2">
       <h2 class="text-lg font-medium">Kyzoid</h2>
       <span class="text-red-600 mb-1">{{ data.rating.global }}</span>
@@ -13,7 +13,7 @@
       </div>
     </div>
     <img class="rounded shadow z-10" :src="avatar" width="123" alt="Avatar" />
-    <div class="flex flex-col w-48">
+    <div class="flex flex-col w-min">
       <div class="rating stream w-full mb-0.5" :style="`width: ${getPercent(data.rating.stream)}%`">
         <span class="text-xs font-medium pl-1 pb-0.5">{{ data.rating.stream }}</span>
       </div>
@@ -49,13 +49,13 @@ const data = stats['etterna'];
 
 const getPercent = (rating) => {
   const highestRating = data.rating.handstream;
-  return rating/highestRating * 100;
+  return rating / highestRating * 100;
 }
 </script>
 
 <style scoped>
-.profile {
-  width: max-content;
+.w-min {
+  width: 8rem;
 }
 
 .rating {
@@ -63,7 +63,7 @@ const getPercent = (rating) => {
   position: relative;
 }
 
-.rating > span {
+.rating>span {
   position: absolute;
   top: 50%;
   right: 0;

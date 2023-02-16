@@ -1,9 +1,9 @@
 <template>
-  <div class="card p-1.5 rounded-lg">
-    <div class="card-inner flex p-4 rounded-lg h-full">
-      <div class="avatar rounded"><img :src="avatar" alt="Profile picture"></div>
+  <div class="maimai-finale-card p-1.5 rounded-lg">
+    <div class="card-inner flex p-4 rounded-lg">
+      <div class="avatar rounded flex-shrink-0"><img :src="avatar" alt="Profile picture"></div>
       
-      <div class="w-64 ml-4 flex flex-col justify-between">
+      <div class="w-full ml-4 flex flex-col justify-between">
         <div class="mt-0.5 ml-0.5 flex justify-between">
           <div class="rating rating-blue pr-2 pl-5 flex items-center justify-center rounded relative">
             <img class="absolute img-top" :src="starSolo" alt="Star top">
@@ -125,7 +125,7 @@ const data = stats["maimaiFinale"];
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7), 2px 2px 1px rgba(0, 0, 0, 0.7), 0px 1px 1px rgba(0, 0, 0, 0.7), 0px 0px 1px rgba(0, 0, 0, 0.7);
 }
 
-.card {
+.maimai-finale-card {
   background-color: rgba(45, 63, 126, 0.8);
   /* background: linear-gradient(0deg, rgba(255,140,253,0.1) 0%, rgba(140,140,255,0.1) 25%, rgba(140,255,215,0.1) 50%, rgba(255,255,140,0.1) 75%, rgba(246,140,255,0.09567577030812324) 100%); */
   /* background: linear-gradient(0deg, rgba(255,180,254,0.2) 0%, rgba(180,180,255,0.2) 25%, rgba(255,255,180,0.2) 50%, rgba(246,140,255,0.2) 75%); */

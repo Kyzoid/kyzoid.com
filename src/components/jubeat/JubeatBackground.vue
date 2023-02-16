@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main relative h-full w-full">
+  <div class="bg-jubeat h-full w-full">
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 </script>
 
 <style scoped>
-.bg-main {
+.bg-jubeat {
   background: url("/jubeat/bg.jpg");
   background-repeat: repeat;
   background-position: center center;

@@ -1,6 +1,6 @@
 <template>
-  <div class="wrapper">
-    <div class="profile-header flex justify-between items-center rounded-t px-3">
+  <div class="osu-card">
+    <div class="card-header flex justify-between items-center rounded-t px-3">
       <div class="infos mr-8 w-full h-full flex items-center">
         <span class="menu menu-active">infos</span>
       </div>
@@ -10,9 +10,9 @@
         <li class="menu" :class="[ mode === 'mania' ? 'menu-active' : '']" @click="mode = 'mania'">osu!mania</li>
       </ul>
     </div>
-    <div class="profile rounded-b flex items-start p-4">
+    <div class="background rounded-b flex items-start p-4">
       <img class="rounded-3xl" :src="avatar" alt="Avatar" width="112" />
-      <div class="flex flex-col justify-between ml-4">
+      <div class="flex flex-col justify-between ml-4 w-full">
         <div class="flex items-center">
           <h2 class="text-lg font-medium flex items-center">
             <img :src="flag" width="22" alt="France flag" />
@@ -68,12 +68,12 @@ const currentMode = computed(() => {
 </script>
 
 <style scoped>
-* {
-  font-family: 'Torus';
+.osu-card {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 25%);
 }
 
-.wrapper {
-  box-shadow: 0 1px 3px rgb(0 0 0 / 25%);
+* {
+  font-family: 'Torus';
 }
 
 .stats {
@@ -120,12 +120,11 @@ const currentMode = computed(() => {
   color: white;
 }
 
-.profile {
+.background {
   background-color: #382E32;
-  width: max-content;
 }
 
-.profile-header {
+.card-header {
   background-color: #3D2932;
   height: 2.5rem;
 }

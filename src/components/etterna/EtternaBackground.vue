@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main relative h-full w-full">
+  <div class="bg-etterna h-full w-full">
   </div>
 </template>
 
@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <style scoped>
-.bg-main {
+.bg-etterna {
   background-image: url("/etterna/bg-pattern.png");
   background-color: #222222;
   background-size: 70px;

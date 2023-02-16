@@ -32,10 +32,9 @@ defineProps({
   background-color: rgb(87, 192, 255);
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .bg-dots {
@@ -43,7 +42,7 @@ defineProps({
   width: 100%;
   height: 100%;
   background-size: contain;
-  z-index: -1;
+  z-index: 0;
 }
 
 .bg-dots>div {
@@ -71,6 +70,7 @@ defineProps({
 
 .bg-angle {
   position: absolute;
+  z-index: 1;
 }
 
 .bg-angle-full {

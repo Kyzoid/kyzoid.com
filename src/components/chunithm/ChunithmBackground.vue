@@ -1,5 +1,5 @@
 <template>
-  <div class="background w-full h-full">
+  <div class="bg-chunithm w-full h-full">
     <div class="bg-effect">
       <div class="bg-flag">
         <div class="flag top-left">
@@ -62,13 +62,12 @@ defineProps({
 </script>
 
 <style scoped>
-.background {
+.bg-chunithm {
   background: linear-gradient(180deg, #fffe58 0, #f3a607 calc(100% - 50%));
-  position: relative;
   overflow: hidden;
 }
 
-.background:before {
+.bg-chunithm:before {
   content: "";
   display: block;
   position: absolute;
@@ -81,7 +80,7 @@ defineProps({
   left: -80px;
 }
 
-.background:after {
+.bg-chunithm:after {
   content: "";
   display: block;
   position: absolute;

@@ -1,18 +1,18 @@
 <template>
-  <div class="card shadow flex items-start z-50 p-4">
+  <div class="chunithm-card shadow flex items-start z-50 p-4">
     <div class="avatar mr-4">
       <img :src="avatar" width="87" alt="Avatar">
     </div>
-    <div>
+    <div class="w-full">
       <div class="honor shadow flex justify-center">
-        <span class="uppercase">{{ data.honor }}</span>
+        <span class="uppercase">{{ data.title }}</span>
       </div>
-      <div class="user flex items-baseline justify-between mt-2">
+      <div class="user flex items-baseline mt-2">
         <div class="flex items-baseline">
           <span class="mr-1">Lv.</span>
           <span class="text-lg font-medium">{{ data.level }}</span>
         </div>
-        <span class="username font-medium uppercase text-xl">{{ data.username }}</span>
+        <span class="ml-12 username font-medium uppercase text-xl">{{ data.username }}</span>
       </div>
       <div class="info flex items-start mt-4">
         <span class="info-label uppercase">Rating</span>
@@ -68,7 +68,6 @@ const data = stats["chunithm"];
 
 .username {
   letter-spacing: 0.2em;
-  width: 10rem;
 }
 
 .info-label {
@@ -112,7 +111,7 @@ const data = stats["chunithm"];
   width: 8rem;
 }
 
-.card {
+.chunithm-card {
   background: #151c39;
   background: linear-gradient(180deg, rgba(21, 28, 57, 0.9) 0%, rgba(28, 37, 75, 0.9) 100%);
 }

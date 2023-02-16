@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main relative h-full w-full" :class="[(mode === 'page' ? '' : 'bg-main-compact')]">
+  <div class="bg-popn h-full w-full" :class="[(mode === 'page' ? '' : 'bg-main-compact')]">
   </div>
 </template>
 
@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <style scoped>
-.bg-main {
+.bg-popn {
   background-image: url("/popn/bg.jpg"), url("/popn/schall_1P.webp");
   background-position: center center;
   background-repeat: repeat, no-repeat;

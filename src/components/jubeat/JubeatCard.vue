@@ -1,12 +1,12 @@
 <template>
-  <div class="profile  font-semibold flex items-center p-4">
+  <div class="jubeat-card font-semibold flex items-center p-4">
     <img class="-ml-4" :src="emblem" width="150" alt="Emblem" />
-    <div class="w-44">
+    <div class="w-full">
       <span class="text-xs">初めまして</span>
       <h2 class="uppercase username font-bold text-xl">{{  data.username  }}</h2>
       <div class="separator mt-4 mb-2"></div>
       <div class="flex justify-between items-center">
-        <span class="text-sm">Jubility</span>
+        <span class="text-sm mr-32">Jubility</span>
         <span class="text-lg">{{ data.rating }}</span>
       </div>
       <div class="flex justify-between items-center">
@@ -25,9 +25,8 @@ const data = stats['jubeat'];
 </script>
 
 <style scoped>
-.profile {
+.jubeat-card {
   color: #eaffff;
-  width: max-content;
   border-radius: 40px;
   border: solid 6px #fff;
   background: url('/jubeat/mark.png') no-repeat left 10px bottom 10px , linear-gradient(to right, rgba(145,176,185,.5), rgba(83,134,148,.5));
