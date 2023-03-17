@@ -1,33 +1,32 @@
 <template>
   <div class="maimai-deluxe-card p-6 bg-white rounded-3xl text-black">
     <div class="flex items-start">
-      <img :src="avatar" alt="Avatar" width="112">
+      <img class="hidden sm:block" :src="avatar" alt="Avatar" width="112">
 
-      <div class="w-full flex flex-col ml-2">
-        <div class="relative trophy">
-          <img class="absolute" :src="trophySilver" alt="Trophy silver">
-          <span class="absolute text-white text-sm">{{ data.title }}</span>
-        </div>
+      <div class="w-full flex flex-col ml-0 sm:ml-2">
+        <div class="flex sm:flex-col">
+          <img class="mr-2 block sm:hidden" :src="avatar" alt="Avatar" width="100">
+          <div>
+            <div class="relative trophy">
+              <img class="absolute" :src="trophySilver" alt="Trophy silver">
+              <span class="absolute text-white text-sm">{{ data.title }}</span>
+            </div>
 
-        <div class="flex mt-2 items-start">
-          <span class="name bg-white border pl-2 py-0.5 border-gray-300 rounded w-full mr-2">{{ data.username }}</span>
-          <div class="relative rating shrink-0">
-            <img class="absolute" :src="rating" alt="Rating purple">
-            <span class="absolute font-bold text-sm">{{ data.rating }}</span>
+            <div class="flex mt-2 items-start flex-wrap sm:flex-nowrap">
+              <span class="name bg-white border pl-2 py-0.5 pr-0 sm:pr-8 border-gray-300 rounded w-full mr-2">{{ data.username }}</span>
+              <div class="relative rating shrink-0 mt-2 sm:mt-0.5">
+                <img class="absolute" :src="rating" alt="Rating purple">
+                <span class="absolute font-bold text-sm">{{ data.rating }}</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="border-dotted border-2 border-gray-300 my-2"></div>
 
         <div class="flex items-center justify-between">
-          <div class="flex items-center mr-12">
-            <img class="mr-2 rank-img" :src="`/maimai/course_rank_${data.courseRank}.png`" alt="Course rank" />
-            <img class="rank-img" :src="`/maimai/class_rank_${data.classRank}.png`" alt="Class rank" />
-          </div>
-          <div class="flex items-center">
-            <img class="mr-1" width="24" :src="star" alt="Star" />
-            <span>×35</span>
-          </div>
+          <img class="mr-2 rank-img" :src="`/maimai/course_rank_${data.courseRank}.png`" alt="Course rank" />
+          <img class="rank-img" :src="`/maimai/class_rank_${data.classRank}.png`" alt="Class rank" />
         </div>
       </div>
     </div>
@@ -87,6 +86,7 @@ const data = stats["maimaiDeluxe"];
 }
 
 .trophy span {
+  word-break: keep-all;
   text-shadow: black 1px 1px 0, black -1px -1px 0,
 		black -1px 1px 0, black 1px -1px 0,
 		black 0px 1px 0, black 0 -1px 0,

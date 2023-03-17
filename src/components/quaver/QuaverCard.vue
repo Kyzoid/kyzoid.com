@@ -8,18 +8,29 @@
       </div>
     </div>
     <div class="flex items-start profile-card p-4 rounded">
-      <img class="rounded-lg avatar" width="112" :src="avatar" alt="Avatar" />
-      <div class="flex flex-col justify-between text-sm ml-4 w-full">
+      <img class="hidden sm:block rounded-lg avatar" width="112" :src="avatar" alt="Avatar" />
+      <div class="flex flex-col justify-between text-sm ml-0 sm:ml-4 w-full">
         <div class="flex justify-between items-start">
-          <div class="text-lg flex items-center">
-            <img :src="flag" width="24" alt="France flag"><span class="ml-2">Kyzoid</span>
+          <div class="flex items-center">
+            <img class="mr-2 block sm:hidden rounded-lg avatar" width="65" :src="avatar" alt="Avatar" />
+            <div>
+              <div class="text-lg flex items-center">
+                <img class="hidden sm:block mr-2" :src="flag" width="24" alt="France flag" />
+                <span>Kyzoid</span>
+              </div>
+              <div class="sm:hidden flex items-center">
+                <img class="mr-2" :src="flag" width="21" alt="France flag" />
+                <span>France</span>
+              </div>
+            </div>
           </div>
+          
           <img width="60" :src="alphaTester" alt="Alpha tester badge" />
         </div>
 
-        <div class="stats text-xs p-2 rounded-lg mt-4">
+        <div class="stats text-xs p-2 rounded-lg mt-2 sm:mt-4">
           <div class="px-2 text-sm flex justify-between items-center">
-            <span class="mr-12">Overall Rating</span>
+            <span class="mr-20 sm:mr-12">Overall Rating</span>
             <span class="text-right">{{ currentMode.rating }}</span>
           </div>
           <div class="stats-divider my-1" data-v-f0db6588=""></div>

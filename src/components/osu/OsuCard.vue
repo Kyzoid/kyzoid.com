@@ -11,16 +11,23 @@
       </ul>
     </div>
     <div class="background rounded-b flex items-start p-4">
-      <img class="rounded-3xl" :src="avatar" alt="Avatar" width="112" />
-      <div class="flex flex-col justify-between ml-4 w-full">
+      <img class="hidden sm:block rounded-3xl" :src="avatar" alt="Avatar" width="112" />
+      <div class="flex flex-col justify-between ml-0 sm:ml-4 w-full">
         <div class="flex items-center">
-          <h2 class="text-lg font-medium flex items-center">
-            <img :src="flag" width="22" alt="France flag" />
-            <span class="ml-2">{{ data.username }}</span>
-          </h2>
-          <div v-if="currentMode.pp" class="mx-2 divider"></div>
-          <div v-if="currentMode.pp" class="pp text-sm">
-            {{ currentMode.pp }}<span class="text-xs text-white">pp</span>
+          <img class="block sm:hidden rounded-2xl mr-2" :src="avatar" alt="Avatar" width="65" />
+          <div>
+            <div class="flex items-center">
+              <img class="hidden sm:block mr-2" :src="flag" width="24" alt="France flag" />
+              <h2 class="text-lg font-medium flex items-center">{{ data.username }}</h2>
+              <div v-if="currentMode.pp" class="mx-2 divider"></div>
+              <div v-if="currentMode.pp" class="pp text-sm">
+                {{ currentMode.pp }}<span class="text-xs text-white">pp</span>
+              </div>
+            </div>
+            <div class="flex items-center sm:hidden">
+              <img class="mr-2" :src="flag" width="21" alt="France flag" />
+              <span class="text-sm">France</span>
+            </div>
           </div>
         </div>
         <div class="stats px-2 py-2 mt-2 rounded-lg">

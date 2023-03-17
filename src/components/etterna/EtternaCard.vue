@@ -1,5 +1,5 @@
 <template>
-  <div class="etterna-card flex items-center">
+  <div class="etterna-card mr-8 flex items-center">
     <div class="flex flex-col items-end mr-2">
       <h2 class="text-lg font-medium">Kyzoid</h2>
       <span class="text-red-600 mb-1">{{ data.rating.global }}</span>

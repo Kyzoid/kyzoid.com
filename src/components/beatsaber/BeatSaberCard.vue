@@ -1,11 +1,11 @@
 <template>
   <div class="beatsaber-card p-4 rounded-lg flex items-center">
-    <img class="rounded-full border-2 border-blue-400" :src="avatar" width="112" alt="Avatar" />
+    <img class="rounded-full w-24 sm:w-28 border-2 border-blue-400" :src="avatar" alt="Avatar" />
     <div class="flex flex-col ml-3">
       <div class="flex items-center">
         <span class="text-blue-400 text-lg font-bold">{{ data.username }}</span>
         <div class="divider mx-3"></div>
-        <span class="font-bold pp">{{ data.rating }}pp</span>
+        <span class="font-bold pp text-sm">{{ data.rating }}pp</span>
       </div>
       <div class="flex">
         <div class="flex items-center">

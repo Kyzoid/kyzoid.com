@@ -13,7 +13,7 @@
 
       <div class="mt-2">
         <span class="uppercase font-medium text-sm">Rating</span>
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-4">
           <Stat title="4S" :value="data.rating['4S']" />
           <Stat title="5S" :value="data.rating['5S']" />
           <Stat title="6S" :value="data.rating['6S']" />
@@ -23,7 +23,7 @@
       
       <div class="mt-2">
         <span class="uppercase font-medium text-sm">Play Count</span>
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-4">
           <Stat title="4S" :value="data.playCount['4S']" />
           <Stat title="5S" :value="data.playCount['5S']" />
           <Stat title="6S" :value="data.playCount['6S']" />

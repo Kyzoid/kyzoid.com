@@ -1,12 +1,17 @@
 <template>
-  <div class="jubeat-card font-semibold flex items-center p-4">
-    <img class="-ml-4" :src="emblem" width="150" alt="Emblem" />
+  <div class="jubeat-card font-semibold flex items-center py-6 px-10 sm:px-4 sm:py-4">
+    <img class="-ml-4 hidden sm:block w-36" :src="emblem" alt="Emblem" />
     <div class="w-full">
-      <span class="text-xs">初めまして</span>
-      <h2 class="uppercase username font-bold text-xl">{{  data.username  }}</h2>
-      <div class="separator mt-4 mb-2"></div>
-      <div class="flex justify-between items-center">
-        <span class="text-sm mr-32">Jubility</span>
+      <div class="flex items-start">
+        <img class="-ml-4 block sm:hidden w-14 mr-2" :src="emblem" alt="Emblem" />
+        <div>
+          <span class="text-xs">初めまして</span>
+          <h2 class="uppercase username font-bold text-xl">{{ data.username }}</h2>
+        </div>
+      </div>
+      <div class="separator mt-1 sm:mt-4 mb-2"></div>
+      <div class="flex justify-between items-center w-48">
+        <span class="text-sm">Jubility</span>
         <span class="text-lg">{{ data.rating }}</span>
       </div>
       <div class="flex justify-between items-center">
