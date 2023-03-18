@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="flex flex-wrap mt-3">
-        <Chip label="Play Count" value="91" />
+        <Chip label="Play Count" :value="data.playCount" />
       </div>
     </div>
   </div>

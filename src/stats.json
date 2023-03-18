@@ -41,31 +41,31 @@
     "username": "Kyzoid",
     "level": 75,
     "rating": {
-      "4S": "20,876",
-      "5S": "18,026",
-      "6S": "20,551",
-      "8S": "10,017"
+      "4S": "20,923",
+      "5S": "20,606",
+      "6S": "21,624",
+      "8S": "20,016"
     },
     "playCount": {
-      "4S": "173",
-      "5S": "94",
-      "6S": "143",
-      "8S": "118"
+      "4S": "183",
+      "5S": "146",
+      "6S": "169",
+      "8S": "479"
     }
   },
   "beatsaber": {
     "username": "Kyzoid",
-    "rating": "2,968.90",
-    "globalRank": 12309,
-    "countryRank": 689,
-    "playCount": 91
+    "rating": "3052.56",
+    "globalRank": 11731,
+    "countryRank": 348,
+    "playCount": 101
   },
   "osu": {
     "username": "Kyzoid",
     "rating": {
       "std" : { "pp": null, "globalRank": null, "countryRank": null, "accuracy": "98,97%", "playCount": "25 880" },
       "taiko" : { "pp": null, "globalRank": null, "countryRank": null, "accuracy": "98,23%", "playCount": "2 945" },
-      "mania" : { "pp": 8093, "globalRank": "2 924", "countryRank": 41, "accuracy": "94,69%", "playCount": "20 889" }
+      "mania" : { "pp": 8096, "globalRank": "3 432", "countryRank": 43, "accuracy": "96,32%", "playCount": "21 243" }
     }
   },
   "quaver": {
