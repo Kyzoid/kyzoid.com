@@ -12,14 +12,14 @@ html {
 
 @font-face {
   font-family: 'Torus';
-  src: url('fonts/Torus-Regular.otf');
+  src: url('/fonts/Torus-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Torus';
-  src: url('fonts/Torus-SemiBold.otf');
+  src: url('/fonts/Torus-SemiBold.otf');
   font-weight: 600;
   font-style: normal;
 }
