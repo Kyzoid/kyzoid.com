@@ -1,0 +1,172 @@
+<svg width="262" height="160" viewBox="0 0 262 160" fill="none" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <mask id="mask0_103_53" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="96" y="1"
+    width="163" height="155">
+    <path d="M225.601 7H98L221.614 155H251.022L258 147.5V30.5L230.087 2L225.601 7Z" fill="black"
+      stroke="black" />
+  </mask>
+  <g mask="url(#mask0_103_53)">
+    <rect x="56.8624" y="7.3793" width="71.0345" height="15.1724" fill="url(#pattern0)" />
+    <rect x="127.897" y="7.3793" width="71.0345" height="15.1724" fill="url(#pattern1)" />
+    <rect x="127.897" y="22.5517" width="71.0345" height="15.1724" fill="url(#pattern2)" />
+    <rect x="56.8624" y="22.5517" width="71.0345" height="15.1724" fill="url(#pattern3)" />
+    <rect x="56.8624" y="37.7242" width="71.0345" height="15.1724" fill="url(#pattern4)" />
+    <rect x="127.897" y="37.7242" width="71.0345" height="15.1724" fill="url(#pattern5)" />
+    <rect x="127.897" y="52.8965" width="71.0345" height="15.1724" fill="url(#pattern6)" />
+    <rect x="56.8624" y="52.8965" width="71.0345" height="15.1724" fill="url(#pattern7)" />
+    <rect x="56.8624" y="68.069" width="71.0345" height="15.1724" fill="url(#pattern8)" />
+    <rect x="127.897" y="68.069" width="71.0345" height="15.1724" fill="url(#pattern9)" />
+    <rect x="127.897" y="83.2414" width="71.0345" height="15.1724" fill="url(#pattern10)" />
+    <rect x="56.8624" y="83.2414" width="71.0345" height="15.1724" fill="url(#pattern11)" />
+    <rect x="56.8624" y="98.4138" width="71.0345" height="15.1724" fill="url(#pattern12)" />
+    <rect x="127.897" y="98.4138" width="71.0345" height="15.1724" fill="url(#pattern13)" />
+    <rect x="127.897" y="113.586" width="71.0345" height="15.1724" fill="url(#pattern14)" />
+    <rect x="198.931" y="7.3793" width="71.0345" height="15.1724" fill="url(#pattern15)" />
+    <rect x="199" y="-7" width="71" height="15" fill="url(#pattern16)" />
+    <rect x="128" y="-7" width="71" height="15" fill="url(#pattern17)" />
+    <rect x="57" y="-7" width="71" height="15" fill="url(#pattern18)" />
+    <rect x="198.931" y="22.5517" width="71.0345" height="15.1724" fill="url(#pattern19)" />
+    <rect x="198.931" y="37.7242" width="71.0345" height="15.1724" fill="url(#pattern20)" />
+    <rect x="198.931" y="52.8965" width="71.0345" height="15.1724" fill="url(#pattern21)" />
+    <rect x="198.931" y="68.069" width="71.0345" height="15.1724" fill="url(#pattern22)" />
+    <rect x="198.931" y="83.2414" width="71.0345" height="15.1724" fill="url(#pattern23)" />
+    <rect x="198.931" y="98.4138" width="71.0345" height="15.1724" fill="url(#pattern24)" />
+    <rect x="198.931" y="113.586" width="71.0345" height="15.1724" fill="url(#pattern25)" />
+    <rect x="56.8624" y="113.586" width="71.0345" height="15.1724" fill="url(#pattern26)" />
+    <rect x="127.897" y="128.759" width="71.0345" height="15.1724" fill="url(#pattern27)" />
+    <rect x="198.931" y="128.759" width="71.0345" height="15.1724" fill="url(#pattern28)" />
+    <rect x="56.8624" y="128.759" width="71.0345" height="15.1724" fill="url(#pattern29)" />
+    <rect x="127.897" y="143.931" width="71.0345" height="15.1724" fill="url(#pattern30)" />
+    <rect x="198.931" y="143.931" width="71.0345" height="15.1724" fill="url(#pattern31)" />
+    <rect x="56.8624" y="143.931" width="71.0345" height="15.1724" fill="url(#pattern32)" />
+  </g>
+  <rect x="226.517" y="146" width="20.6897" height="6.2069" fill="url(#pattern33)" />
+  <path
+    d="M1.20715 10.9655V150.483L8.79336 158.069H80.1727L85.0003 153.241L214.104 153.241L219.622 158.759L253.414 158.414L260.655 150.828L260.5 10L253 2.5H231L258.586 30.9655V148.069L251.311 156H221.346L92.5 2H10.1727L1.20715 10.9655Z"
+    fill="#D9D9D9" stroke="#D6D9E0" />
+  <path d="M1.5 150.5V96.5L118.5 153H85L80 158H9L1.5 150.5Z" fill="#B8BFC7" />
+  <path
+    d="M1.20703 150.828V10.3104L10.1725 1.34492L92.2415 1.00009L97.7588 6.51733L225.483 6.51726L230 1.5H253L261 9.96553V150.828L253.414 158.759H219.621L214.103 153.241H85.0001L80.1725 158.069L8.79324 158.414L1.20703 150.828Z"
+    stroke="black" stroke-opacity="0.5" />
+  <path
+    d="M123.597 100H20.7477L17.0001 103.103V134.828L20.7477 137.931H123.597L127.345 134.828V103.103L123.597 100Z"
+    fill="#3C3C3C" fill-opacity="0.9" stroke="black" stroke-opacity="0.2" />
+  <path
+    d="M239.597 100H136.748L133 103.103V134.828L136.748 137.931H239.597L243.345 134.828V103.103L239.597 100Z"
+    fill="#3C3C3C" fill-opacity="0.9" stroke="black" stroke-opacity="0.2" />
+  <path d="M17.0001 25H244.586V45.5867V73.3788V93.9655H17.0001V73.3788V45.5867V25Z" fill="#3C3C3C"
+    fill-opacity="0.9" />
+  <path
+    d="M17.0001 45.5867V25H244.586V45.5867M17.0001 45.5867V73.3788M17.0001 45.5867H130.793H244.586M244.586 45.5867V73.3788M244.586 73.3788V93.9655H17.0001V73.3788M244.586 73.3788H17.0001"
+    stroke="black" stroke-opacity="0.2" stroke-width="2" />
+  <path d="M235 6.5L258.96 30.5V148L260 134.484V12.8366L235 6.5Z" fill="#B8BFC7" />
+  <defs>
+    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern6" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern7" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern8" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern9" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern10" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern11" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern12" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern13" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern14" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern15" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern16" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="matrix(0.00970874 0 0 0.0459547 0 -0.00550167)" />
+    </pattern>
+    <pattern id="pattern17" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="matrix(0.00970874 0 0 0.0459547 0 -0.00550167)" />
+    </pattern>
+    <pattern id="pattern18" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="matrix(0.00970874 0 0 0.0459547 0 -0.00550167)" />
+    </pattern>
+    <pattern id="pattern19" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern20" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern21" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern22" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern23" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern24" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern25" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern26" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern27" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern28" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern29" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern30" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern31" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern32" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_103_53" transform="scale(0.00970874 0.0454545)" />
+    </pattern>
+    <pattern id="pattern33" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image1_103_53" transform="matrix(0.0230769 0 0 0.0769231 -0.0192307 0)" />
+    </pattern>
+    <image id="image0_103_53" width="103" height="22"
+      xlink:href="data:image/jpeg;base64,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" />
+    <image id="image1_103_53" width="45" height="13"
+      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAANCAYAAAA9tuesAAAACXBIWXMAAA6/AAAOvwE4BVMkAAAB+ElEQVR42sXWP0/bQBgGcNsXk9jYiXHsBGha/jYGDAlJWFhoValVGYpEK4QAMbEwQCVEVQkmvgJTP1OHVmJBiA8CC+rTew4ZA2FNPLyZkjy/O79+77ROp4OkNE27L0NAy+WgD+RhWDYM24HhuBBuqafFDJUlM5lNg1MswvM8tNvt1MmPZrMJ13Wh6Tp0c0D9SHg+zOFXyL+eQGEqghXFsGYWelsyg1nMZDYNagHS9GZs/Ck6juMULFdrVkdQmJ6B01lG6d0nDK2uo7y2ifL6NoKvOz0p/jczmMVMZtNAizJZFhZbrRTN7WdLcFX8Elddev8Z4dYeRg9PUDs+62sxk9k00KLg0jZaq6Fer0OLoui+j2X/iKKnHk9p5SMmvp9g//cfnN/e4Ne/u74WM5lNAy000WbITgiCAJrjOArN1sj5Iex4Ef6XDfy4vOo79nnRQAtNtKn2NQy2sv6ANsNhDDaXEHzbzRycFC000Uaj8lYqla6d5gvx8+o6czANtDzeadUZHHdCiK6enjo6xcHfi8x6mtk0PO5pGtU7+NL0sGcb8D6sZj49aKAlmR6e76cjz7btrjltvZ3LfE7TkMxp2ubi+RTNqlarL5+IY5P9PxFl5vMTMQjDpyciq9GQj8E0IWTfJHcPI1/I5O4h7MGHuwctuhxz9CXW/yF6q0ceBe2fAAAAAElFTkSuQmCC" />
+  </defs>
+</svg>
+  

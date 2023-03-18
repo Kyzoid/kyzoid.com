@@ -1,7 +1,8 @@
 <template>
   <div class="sdvx-card relative">
-    <img class="card-bg w-full" :src="frame" alt="Card background" />
-    <img class="apcard" :src="apcard" width="100" alt="Card background" />
+    <img class="hidden sm:block card-bg w-full" :src="frame" alt="Card background" />
+    <img class="block sm:hidden card-bg w-full" :src="frameMobile" alt="Card background" />
+    <img class="apcard hidden sm:block" :src="apcard" alt="Card background" />
     <img class="dan" width="105" :src="`/sdvx/dan/${data.dan}.png`" alt="Dan" />
     <div class="volforce flex items-end">
       <div class="flex flex-col item-center justify-center -mt-0.5 mr-1">
@@ -24,6 +25,7 @@
 import apcard from '/sdvx/apcard.png';
 import stats from '/src/stats.json';
 import frame from '/sdvx/frame.svg';
+import frameMobile from '/sdvx/frame_mobile.svg';
 
 const data = stats["SDVX"];
 const force = () => {
@@ -54,7 +56,7 @@ const volforce = () => {
 }
 
 .sdvx-card {
-  width: 450px;
+  width: 290px;
 }
 .card-bg {
   opacity: 1;
@@ -63,40 +65,76 @@ const volforce = () => {
 
 .apcard {
   position: absolute;
-  top: 1.96rem;
-  left: 1.75rem;
-  transform: scale(0.97);
+  top: -70%;
+  left: 50%;
+  width: 112px;
+  transform: translateX(-50%);
 }
 
 .name {
   position: absolute;
-  top: 3.85rem;
-  left: 9.5rem;
+  top: 3.4rem;
+  left: 1.8rem;
   letter-spacing: 0.1em;
 }
 
 .id {
   position: absolute;
-  top: 5.45rem;
-  left: 9.55rem;
+  top: 5rem;
+  left: 1.8rem;
   letter-spacing: 0.1em;
 }
 
 .title {
   position: absolute;
-  top: 2.15rem;
-  left: 9.4rem;
+  top: 1.7rem;
+  left: 1.8rem;
 }
 
 .dan {
   position: absolute;
-  bottom: 2.5rem;
-  left: 9.4rem;
+  bottom: 1.95rem;
+  left: 1.8rem;
 }
 
 .volforce {
   position: absolute;
-  bottom: 2.3rem;
-  right: 4.2rem;
+  bottom: 1.7rem;
+  right: 2.15rem;
+}
+
+@media (min-width: 640px) {
+  .sdvx-card {
+    width: 450px;
+  }
+
+  .name {
+    top: 3.85rem;
+    left: 9.5rem;
+  }
+
+  .id {
+    top: 5.45rem;
+    left: 9.55rem;
+  }
+
+  .title {
+    top: 2.15rem;
+    left: 9.4rem;
+  }
+  .dan {
+    bottom: 2.5rem;
+    left: 9.4rem;
+  }
+  .volforce {
+    bottom: 2.3rem;
+    right: 4.2rem;
+  }
+
+  .apcard {
+    top: 1.96rem;
+    left: 4.9rem;
+    width: 100px;
+  }
 }
 </style>
