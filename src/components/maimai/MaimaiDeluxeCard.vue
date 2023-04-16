@@ -14,10 +14,7 @@
 
             <div class="flex mt-2 items-start flex-wrap sm:flex-nowrap">
               <span class="name bg-white border pl-2 py-0.5 pr-0 sm:pr-8 border-gray-300 rounded w-full mr-2">{{ data.username }}</span>
-              <div class="relative rating shrink-0 mt-2 sm:mt-0.5">
-                <img class="absolute" :src="rating" alt="Rating purple">
-                <span class="absolute font-bold text-sm">{{ data.rating }}</span>
-              </div>
+              <Rating :value="data.rating" />
             </div>
           </div>
         </div>
@@ -34,8 +31,8 @@
 </template>
 
 <script setup>
-import rating from '/maimai/rating_base_purple.png';
 import avatar from '/maimai/avatar.png';
+import Rating from './Rating.vue';
 import trophySilver from '/maimai/trophy_silver.png';
 import star from '/maimai/icon_star.png';
 import stats from '/src/stats.json';
@@ -52,28 +49,6 @@ const data = stats["maimaiDeluxe"];
 
 .rank-img {
   height: 35px;
-}
-
-.rating {
-  width: 110px;
-  height: 32px;
-}
-
-.rating img {
-  height: 100%;
-  width: 100%;
-}
-
-.rating span {
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0.25rem;
-  letter-spacing: 0.25em;
-  color: #FFDA01;
-  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0, rgba(0, 0, 0, 0.2) -1px -1px 0,
-  rgba(0, 0, 0, 0.2) -1px 1px 0, rgba(0, 0, 0, 0.2) 1px -1px 0,
-		rgba(0, 0, 0, 0.2) 0px 1px 0, rgba(0, 0, 0, 0.2) 0 -1px 0,
-		rgba(0, 0, 0, 0.2) -1px 0 0, rgba(0, 0, 0, 0.2) 1px 0 0;
 }
 
 .trophy {

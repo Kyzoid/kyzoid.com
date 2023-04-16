@@ -1,0 +1,393 @@
+<svg width="260" height="70" viewBox="0 0 260 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="260" height="70" rx="12" fill="url(#paint0_linear_225_4)" />
+  <mask id="mask0_225_4" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="260"
+    height="70">
+    <rect width="260" height="70" rx="12" fill="url(#paint1_linear_225_4)" />
+  </mask>
+  <g mask="url(#mask0_225_4)">
+    <rect x="109.262" y="-21" width="81.6913" height="81.6913"
+      transform="rotate(19.4947 109.262 -21)" fill="black" fill-opacity="0.1" />
+    <rect x="172" y="23" width="35" height="35" fill="black" fill-opacity="0.2" />
+    <rect x="64.6802" y="29" width="35" height="35" transform="rotate(19.4947 64.6802 29)"
+      fill="black" fill-opacity="0.2" />
+    <rect x="45.0759" y="30.0721" width="31.5611" height="31.5611"
+      transform="rotate(20.4047 45.0759 30.0721)" fill="black" fill-opacity="0.2" />
+    <rect x="69.547" y="-2" width="24.5147" height="24.5147" transform="rotate(20.4047 69.547 -2)"
+      fill="black" fill-opacity="0.2" />
+    <rect x="108.547" y="18" width="29.8793" height="29.8793" transform="rotate(20.4047 108.547 18)"
+      fill="black" fill-opacity="0.1" />
+    <rect x="23.7284" y="6.52948" width="35" height="35" transform="rotate(22.1549 23.7284 6.52948)"
+      fill="black" fill-opacity="0.2" />
+    <rect x="11.0038" y="-3" width="66.3033" height="66.3033" transform="rotate(22.1549 11.0038 -3)"
+      fill="black" fill-opacity="0.2" />
+    <rect x="145.802" y="55" width="23.3413" height="23.3413" transform="rotate(22.1549 145.802 55)"
+      fill="white" fill-opacity="0.25" />
+    <rect x="130.423" y="13" width="14.3805" height="14.3805" transform="rotate(22.1549 130.423 13)"
+      fill="white" fill-opacity="0.1" />
+    <rect x="11.9434" y="50" width="7.80493" height="7.80493" transform="rotate(22.1549 11.9434 50)"
+      fill="white" fill-opacity="0.25" />
+    <rect x="163.159" width="25.4435" height="25.4435" transform="rotate(16.3411 163.159 0)"
+      fill="white" fill-opacity="0.2" />
+    <rect x="197.935" width="56.6354" height="56.6354" transform="rotate(16.3411 197.935 0)"
+      fill="white" fill-opacity="0.1" />
+    <rect x="15" y="-6" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="35" y="14" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="15" y="34" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="35" y="54" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="-5" y="14" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="-5" y="54" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="55" y="-6" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="75" y="14" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="55" y="34" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="75" y="54" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="95" y="-6" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="115" y="14" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="95" y="34" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="115" y="54" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="135" y="-6" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="155" y="14" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="135" y="34" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="155" y="54" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="175" y="-6" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="195" y="14" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="175" y="34" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="195" y="54" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="215" y="-6" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="235" y="14" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="215" y="34" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="255" y="-6" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="255" y="34" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="235" y="54" width="20" height="20" fill="black" fill-opacity="0.2" />
+    <rect x="19" y="10" width="1" height="1" transform="rotate(-90 19 10)" fill="white" />
+    <rect x="18" y="9" width="1" height="1" transform="rotate(-90 18 9)" fill="white" />
+    <rect x="20" y="11" width="1" height="1" transform="rotate(-90 20 11)" fill="white" />
+    <rect x="22" y="15" width="1" height="1" transform="rotate(-90 22 15)" fill="white" />
+    <rect x="18" y="19" width="1" height="1" transform="rotate(-90 18 19)" fill="white" />
+    <rect x="21" y="16" width="1" height="1" transform="rotate(-90 21 16)" fill="white" />
+    <rect x="20" y="17" width="1" height="1" transform="rotate(-90 20 17)" fill="white" />
+    <rect x="16" y="17" width="1" height="1" transform="rotate(-90 16 17)" fill="white" />
+    <rect x="15" y="16" width="1" height="1" transform="rotate(-90 15 16)" fill="white" />
+    <rect x="22" y="13" width="1" height="1" transform="rotate(-90 22 13)" fill="white" />
+    <rect x="21" y="12" width="1" height="1" transform="rotate(-90 21 12)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 18 10)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 17 11)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 16 12)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 15 13)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 15 15)" fill="white" />
+    <rect x="19" y="18" width="1" height="1" transform="rotate(-90 19 18)" fill="white" />
+    <rect x="23" y="14" width="1" height="1" transform="rotate(-90 23 14)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 14 14)" fill="white" />
+    <rect x="17" y="18" width="1" height="1" transform="rotate(-90 17 18)" fill="white" />
+    <rect x="245" y="37" width="1" height="1" transform="rotate(-90 245 37)" fill="white" />
+    <rect x="244" y="36" width="1" height="1" transform="rotate(-90 244 36)" fill="white" />
+    <rect x="246" y="38" width="1" height="1" transform="rotate(-90 246 38)" fill="white" />
+    <rect x="248" y="42" width="1" height="1" transform="rotate(-90 248 42)" fill="white" />
+    <rect x="244" y="46" width="1" height="1" transform="rotate(-90 244 46)" fill="white" />
+    <rect x="247" y="43" width="1" height="1" transform="rotate(-90 247 43)" fill="white" />
+    <rect x="246" y="44" width="1" height="1" transform="rotate(-90 246 44)" fill="white" />
+    <rect x="242" y="44" width="1" height="1" transform="rotate(-90 242 44)" fill="white" />
+    <rect x="241" y="43" width="1" height="1" transform="rotate(-90 241 43)" fill="white" />
+    <rect x="248" y="40" width="1" height="1" transform="rotate(-90 248 40)" fill="white" />
+    <rect x="247" y="39" width="1" height="1" transform="rotate(-90 247 39)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 244 37)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 243 38)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 242 39)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 241 40)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 241 42)"
+      fill="white" />
+    <rect x="245" y="45" width="1" height="1" transform="rotate(-90 245 45)" fill="white" />
+    <rect x="249" y="41" width="1" height="1" transform="rotate(-90 249 41)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 240 41)"
+      fill="white" />
+    <rect x="243" y="45" width="1" height="1" transform="rotate(-90 243 45)" fill="white" />
+    <rect x="126" y="53" width="1" height="1" transform="rotate(-90 126 53)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="125" y="52" width="1" height="1" transform="rotate(-90 125 52)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="127" y="54" width="1" height="1" transform="rotate(-90 127 54)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="129" y="58" width="1" height="1" transform="rotate(-90 129 58)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="125" y="62" width="1" height="1" transform="rotate(-90 125 62)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="128" y="59" width="1" height="1" transform="rotate(-90 128 59)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="127" y="60" width="1" height="1" transform="rotate(-90 127 60)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="123" y="60" width="1" height="1" transform="rotate(-90 123 60)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="122" y="59" width="1" height="1" transform="rotate(-90 122 59)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="129" y="56" width="1" height="1" transform="rotate(-90 129 56)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="128" y="55" width="1" height="1" transform="rotate(-90 128 55)" fill="white"
+      fill-opacity="0.6" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 125 53)"
+      fill="white" fill-opacity="0.6" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 124 54)"
+      fill="white" fill-opacity="0.6" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 123 55)"
+      fill="white" fill-opacity="0.6" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 122 56)"
+      fill="white" fill-opacity="0.6" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 122 58)"
+      fill="white" fill-opacity="0.6" />
+    <rect x="126" y="61" width="1" height="1" transform="rotate(-90 126 61)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="130" y="57" width="1" height="1" transform="rotate(-90 130 57)" fill="white"
+      fill-opacity="0.6" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 121 57)"
+      fill="white" fill-opacity="0.6" />
+    <rect x="124" y="61" width="1" height="1" transform="rotate(-90 124 61)" fill="white"
+      fill-opacity="0.6" />
+    <rect x="156" y="19" width="1" height="1" transform="rotate(-90 156 19)" fill="white" />
+    <rect x="155" y="18" width="1" height="1" transform="rotate(-90 155 18)" fill="white" />
+    <rect x="157" y="20" width="1" height="1" transform="rotate(-90 157 20)" fill="white" />
+    <rect x="159" y="24" width="1" height="1" transform="rotate(-90 159 24)" fill="white" />
+    <rect x="155" y="28" width="1" height="1" transform="rotate(-90 155 28)" fill="white" />
+    <rect x="158" y="25" width="1" height="1" transform="rotate(-90 158 25)" fill="white" />
+    <rect x="157" y="26" width="1" height="1" transform="rotate(-90 157 26)" fill="white" />
+    <rect x="153" y="26" width="1" height="1" transform="rotate(-90 153 26)" fill="white" />
+    <rect x="152" y="25" width="1" height="1" transform="rotate(-90 152 25)" fill="white" />
+    <rect x="159" y="22" width="1" height="1" transform="rotate(-90 159 22)" fill="white" />
+    <rect x="158" y="21" width="1" height="1" transform="rotate(-90 158 21)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 155 19)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 154 20)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 153 21)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 152 22)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 152 24)"
+      fill="white" />
+    <rect x="156" y="27" width="1" height="1" transform="rotate(-90 156 27)" fill="white" />
+    <rect x="160" y="23" width="1" height="1" transform="rotate(-90 160 23)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 151 23)"
+      fill="white" />
+    <rect x="154" y="27" width="1" height="1" transform="rotate(-90 154 27)" fill="white" />
+    <rect x="217" y="38" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="218" y="39" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="217" y="40" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="216" y="41" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="215" y="40" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="214" y="39" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="215" y="38" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="216" y="37" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="202" y="39" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="203" y="40" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="202" y="41" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="201" y="42" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="200" y="41" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="199" y="40" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="200" y="39" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="201" y="38" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="212" y="41" width="1" height="1" fill="white" />
+    <rect x="211" y="42" width="1" height="1" fill="white" />
+    <rect x="210" y="41" width="1" height="1" fill="white" />
+    <rect x="211" y="40" width="1" height="1" fill="white" />
+    <rect x="88" y="18" width="1" height="1" transform="rotate(-90 88 18)" fill="white" />
+    <rect x="87" y="17" width="1" height="1" transform="rotate(-90 87 17)" fill="white" />
+    <rect x="89" y="19" width="1" height="1" transform="rotate(-90 89 19)" fill="white" />
+    <rect x="91" y="23" width="1" height="1" transform="rotate(-90 91 23)" fill="white" />
+    <rect x="87" y="27" width="1" height="1" transform="rotate(-90 87 27)" fill="white" />
+    <rect x="90" y="24" width="1" height="1" transform="rotate(-90 90 24)" fill="white" />
+    <rect x="89" y="25" width="1" height="1" transform="rotate(-90 89 25)" fill="white" />
+    <rect x="85" y="25" width="1" height="1" transform="rotate(-90 85 25)" fill="white" />
+    <rect x="84" y="24" width="1" height="1" transform="rotate(-90 84 24)" fill="white" />
+    <rect x="91" y="21" width="1" height="1" transform="rotate(-90 91 21)" fill="white" />
+    <rect x="90" y="20" width="1" height="1" transform="rotate(-90 90 20)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 87 18)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 86 19)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 85 20)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 84 21)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 84 23)" fill="white" />
+    <rect x="88" y="26" width="1" height="1" transform="rotate(-90 88 26)" fill="white" />
+    <rect x="92" y="22" width="1" height="1" transform="rotate(-90 92 22)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 83 22)" fill="white" />
+    <rect x="86" y="26" width="1" height="1" transform="rotate(-90 86 26)" fill="white" />
+    <rect x="103" y="17" width="1" height="1" fill="white" />
+    <rect x="102" y="18" width="1" height="1" fill="white" />
+    <rect x="101" y="17" width="1" height="1" fill="white" />
+    <rect x="102" y="16" width="1" height="1" fill="white" />
+    <rect x="175" y="49" width="1" height="1" transform="rotate(-90 175 49)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="174" y="48" width="1" height="1" transform="rotate(-90 174 48)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="176" y="50" width="1" height="1" transform="rotate(-90 176 50)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="178" y="54" width="1" height="1" transform="rotate(-90 178 54)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="174" y="58" width="1" height="1" transform="rotate(-90 174 58)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="177" y="55" width="1" height="1" transform="rotate(-90 177 55)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="176" y="56" width="1" height="1" transform="rotate(-90 176 56)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="172" y="56" width="1" height="1" transform="rotate(-90 172 56)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="171" y="55" width="1" height="1" transform="rotate(-90 171 55)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="178" y="52" width="1" height="1" transform="rotate(-90 178 52)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="177" y="51" width="1" height="1" transform="rotate(-90 177 51)" fill="white"
+      fill-opacity="0.3" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 174 49)"
+      fill="white" fill-opacity="0.3" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 173 50)"
+      fill="white" fill-opacity="0.3" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 172 51)"
+      fill="white" fill-opacity="0.3" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 171 52)"
+      fill="white" fill-opacity="0.3" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 171 54)"
+      fill="white" fill-opacity="0.3" />
+    <rect x="175" y="57" width="1" height="1" transform="rotate(-90 175 57)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="179" y="53" width="1" height="1" transform="rotate(-90 179 53)" fill="white"
+      fill-opacity="0.3" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 170 53)"
+      fill="white" fill-opacity="0.3" />
+    <rect x="173" y="57" width="1" height="1" transform="rotate(-90 173 57)" fill="white"
+      fill-opacity="0.3" />
+    <rect x="211" y="4" width="1" height="1" transform="rotate(-90 211 4)" fill="white" />
+    <rect x="207" y="8" width="1" height="1" transform="rotate(-90 207 8)" fill="white" />
+    <rect x="210" y="5" width="1" height="1" transform="rotate(-90 210 5)" fill="white" />
+    <rect x="209" y="6" width="1" height="1" transform="rotate(-90 209 6)" fill="white" />
+    <rect x="205" y="6" width="1" height="1" transform="rotate(-90 205 6)" fill="white" />
+    <rect x="204" y="5" width="1" height="1" transform="rotate(-90 204 5)" fill="white" />
+    <rect x="211" y="2" width="1" height="1" transform="rotate(-90 211 2)" fill="white" />
+    <rect x="210" y="1" width="1" height="1" transform="rotate(-90 210 1)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 205 1)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 204 2)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 204 4)" fill="white" />
+    <rect x="208" y="7" width="1" height="1" transform="rotate(-90 208 7)" fill="white" />
+    <rect x="212" y="3" width="1" height="1" transform="rotate(-90 212 3)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 203 3)" fill="white" />
+    <rect x="206" y="7" width="1" height="1" transform="rotate(-90 206 7)" fill="white" />
+    <rect x="39" y="45" width="1" height="1" transform="rotate(-90 39 45)" fill="white" />
+    <rect x="38" y="44" width="1" height="1" transform="rotate(-90 38 44)" fill="white" />
+    <rect x="40" y="46" width="1" height="1" transform="rotate(-90 40 46)" fill="white" />
+    <rect x="42" y="50" width="1" height="1" transform="rotate(-90 42 50)" fill="white" />
+    <rect x="38" y="54" width="1" height="1" transform="rotate(-90 38 54)" fill="white" />
+    <rect x="41" y="51" width="1" height="1" transform="rotate(-90 41 51)" fill="white" />
+    <rect x="40" y="52" width="1" height="1" transform="rotate(-90 40 52)" fill="white" />
+    <rect x="36" y="52" width="1" height="1" transform="rotate(-90 36 52)" fill="white" />
+    <rect x="35" y="51" width="1" height="1" transform="rotate(-90 35 51)" fill="white" />
+    <rect x="42" y="48" width="1" height="1" transform="rotate(-90 42 48)" fill="white" />
+    <rect x="41" y="47" width="1" height="1" transform="rotate(-90 41 47)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 38 45)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 37 46)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 36 47)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 35 48)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 35 50)" fill="white" />
+    <rect x="39" y="53" width="1" height="1" transform="rotate(-90 39 53)" fill="white" />
+    <rect x="43" y="49" width="1" height="1" transform="rotate(-90 43 49)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 34 49)" fill="white" />
+    <rect x="37" y="53" width="1" height="1" transform="rotate(-90 37 53)" fill="white" />
+    <rect x="42" y="40" width="1" height="1" transform="rotate(-90 42 40)" fill="white" />
+    <rect x="41" y="39" width="1" height="1" transform="rotate(-90 41 39)" fill="white" />
+    <rect x="43" y="41" width="1" height="1" transform="rotate(-90 43 41)" fill="white" />
+    <rect x="45" y="45" width="1" height="1" transform="rotate(-90 45 45)" fill="white" />
+    <rect x="41" y="49" width="1" height="1" transform="rotate(-90 41 49)" fill="white" />
+    <rect x="44" y="46" width="1" height="1" transform="rotate(-90 44 46)" fill="white" />
+    <rect x="43" y="47" width="1" height="1" transform="rotate(-90 43 47)" fill="white" />
+    <rect x="39" y="47" width="1" height="1" transform="rotate(-90 39 47)" fill="white" />
+    <rect x="38" y="46" width="1" height="1" transform="rotate(-90 38 46)" fill="white" />
+    <rect x="45" y="43" width="1" height="1" transform="rotate(-90 45 43)" fill="white" />
+    <rect x="44" y="42" width="1" height="1" transform="rotate(-90 44 42)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 41 40)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 40 41)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 39 42)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 38 43)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 38 45)" fill="white" />
+    <rect x="42" y="48" width="1" height="1" transform="rotate(-90 42 48)" fill="white" />
+    <rect x="46" y="44" width="1" height="1" transform="rotate(-90 46 44)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 37 44)" fill="white" />
+    <rect x="40" y="48" width="1" height="1" transform="rotate(-90 40 48)" fill="white" />
+    <rect x="215" y="65" width="1" height="1" transform="rotate(-90 215 65)" fill="white" />
+    <rect x="214" y="64" width="1" height="1" transform="rotate(-90 214 64)" fill="white" />
+    <rect x="216" y="66" width="1" height="1" transform="rotate(-90 216 66)" fill="white" />
+    <rect x="218" y="70" width="1" height="1" transform="rotate(-90 218 70)" fill="white" />
+    <rect x="218" y="68" width="1" height="1" transform="rotate(-90 218 68)" fill="white" />
+    <rect x="217" y="67" width="1" height="1" transform="rotate(-90 217 67)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 214 65)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 213 66)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 212 67)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 211 68)"
+      fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 211 70)"
+      fill="white" />
+    <rect x="219" y="69" width="1" height="1" transform="rotate(-90 219 69)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 210 69)"
+      fill="white" />
+    <rect x="34" y="40" width="1" height="1" fill="white" />
+    <rect x="33" y="41" width="1" height="1" fill="white" />
+    <rect x="32" y="40" width="1" height="1" fill="white" />
+    <rect x="33" y="39" width="1" height="1" fill="white" />
+    <rect x="79" y="65" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="78" y="66" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="77" y="65" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="78" y="64" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="78" y="64" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="77" y="65" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="76" y="64" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="77" y="63" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="143" y="67" width="1" height="1" fill="white" fill-opacity="0.4" />
+    <rect x="142" y="68" width="1" height="1" fill="white" fill-opacity="0.4" />
+    <rect x="141" y="67" width="1" height="1" fill="white" fill-opacity="0.4" />
+    <rect x="142" y="66" width="1" height="1" fill="white" fill-opacity="0.4" />
+    <rect x="84" y="64" width="1" height="1" fill="white" />
+    <rect x="83" y="65" width="1" height="1" fill="white" />
+    <rect x="82" y="64" width="1" height="1" fill="white" />
+    <rect x="83" y="63" width="1" height="1" fill="white" />
+    <rect x="58" y="16" width="1" height="1" transform="rotate(-90 58 16)" fill="white" />
+    <rect x="57" y="15" width="1" height="1" transform="rotate(-90 57 15)" fill="white" />
+    <rect x="59" y="17" width="1" height="1" transform="rotate(-90 59 17)" fill="white" />
+    <rect x="61" y="21" width="1" height="1" transform="rotate(-90 61 21)" fill="white" />
+    <rect x="57" y="25" width="1" height="1" transform="rotate(-90 57 25)" fill="white" />
+    <rect x="60" y="22" width="1" height="1" transform="rotate(-90 60 22)" fill="white" />
+    <rect x="59" y="23" width="1" height="1" transform="rotate(-90 59 23)" fill="white" />
+    <rect x="55" y="23" width="1" height="1" transform="rotate(-90 55 23)" fill="white" />
+    <rect x="54" y="22" width="1" height="1" transform="rotate(-90 54 22)" fill="white" />
+    <rect x="61" y="19" width="1" height="1" transform="rotate(-90 61 19)" fill="white" />
+    <rect x="60" y="18" width="1" height="1" transform="rotate(-90 60 18)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 57 16)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 56 17)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 55 18)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 54 19)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 54 21)" fill="white" />
+    <rect x="58" y="24" width="1" height="1" transform="rotate(-90 58 24)" fill="white" />
+    <rect x="62" y="20" width="1" height="1" transform="rotate(-90 62 20)" fill="white" />
+    <rect width="1" height="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 53 20)" fill="white" />
+    <rect x="56" y="24" width="1" height="1" transform="rotate(-90 56 24)" fill="white" />
+    <rect x="215" y="43" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="216" y="44" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="215" y="45" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="214" y="46" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="213" y="45" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="212" y="44" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="213" y="43" width="1" height="1" fill="white" fill-opacity="0.5" />
+    <rect x="214" y="42" width="1" height="1" fill="white" fill-opacity="0.5" />
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear_225_4" x1="-0.500001" y1="34.5" x2="263" y2="34.5"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5F4EC8" />
+      <stop offset="1" stop-color="#AA40CB" />
+    </linearGradient>
+    <linearGradient id="paint1_linear_225_4" x1="-0.500001" y1="34.5" x2="263" y2="34.5"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5F4EC8" />
+      <stop offset="1" stop-color="#AA40CB" />
+    </linearGradient>
+  </defs>
+</svg>
+  

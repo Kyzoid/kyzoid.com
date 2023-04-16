@@ -16,14 +16,14 @@
   },
   "maimaiFinale": {
     "username": "Kyzoid",
-    "rating": 2.78,
+    "rating": 8.25,
     "title": "debut",
-    "level": 12
+    "level": 54
   },
   "SDVX": {
     "id": "SV-4407-9462",
     "username": "Kyzoid",
-    "rating": "17.010",
+    "rating": "17.220",
     "title": "よろしくお願いします！",
     "dan": 9
   },
@@ -34,28 +34,33 @@
   },
   "jubeat": {
     "username": "Kyzoid",
-    "rating": 2377.1,
+    "rating": 2377,
     "playCount": 83
+  },
+  "vivid/stasis": {
+    "username": "Kyzoid",
+    "class": 8,
+    "rating": 15027
   },
   "ez2on": {
     "username": "Kyzoid",
     "level": 75,
     "rating": {
-      "4S": "20,923",
-      "5S": "20,606",
-      "6S": "21,624",
-      "8S": "20,016"
+      "4S": "20,949",
+      "5S": "21,622",
+      "6S": "21,929",
+      "8S": "20,431"
     },
     "playCount": {
       "4S": "183",
       "5S": "146",
       "6S": "169",
-      "8S": "479"
+      "8S": "514"
     }
   },
   "beatsaber": {
     "username": "Kyzoid",
-    "rating": "3052.56",
+    "rating": "3052",
     "globalRank": 11731,
     "countryRank": 348,
     "playCount": 101
@@ -65,7 +70,7 @@
     "rating": {
       "std" : { "pp": null, "globalRank": null, "countryRank": null, "accuracy": "98,97%", "playCount": "25 880" },
       "taiko" : { "pp": null, "globalRank": null, "countryRank": null, "accuracy": "98,23%", "playCount": "2 945" },
-      "mania" : { "pp": 8096, "globalRank": "3 432", "countryRank": 43, "accuracy": "96,32%", "playCount": "21 243" }
+      "mania" : { "pp": 8118, "globalRank": "3 432", "countryRank": 43, "accuracy": "96,32%", "playCount": "21 243" }
     }
   },
   "quaver": {

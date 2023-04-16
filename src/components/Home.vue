@@ -1,7 +1,7 @@
 <template>
   <div v-if="currentComponent" class="flex justify-center select-none items-center h-full overflow-hidden">
     <div class="carousel-wrapper masked-overflow absolute bottom-10 z-20">
-      <Swiper ref="swiper" :breakpoints="breakpoints" :centeredSlides="true" :loop="false"
+      <Swiper @swiper="onSwiper" :breakpoints="breakpoints" :centeredSlides="true" :loop="false"
         :initial-slide="currentComponent.id" :simulateTouch="true" :slideToClickedSlide="true"
         @slideChange="onSlideChange" watch-slides-progress>
         <SwiperSlide class="slide" data-name="sdvx"><img :src="sdvx" alt="SDVX Logo" /></SwiperSlide>
@@ -14,6 +14,10 @@
         <SwiperSlide class="slide" data-name="quaver"><img :src="quaver" alt="Quaver Logo" /></SwiperSlide>
         <SwiperSlide class="slide" data-name="etterna"><img :src="etterna" alt="Etterna Logo" /></SwiperSlide>
       </Swiper>
+      <div class="custom-pagination mt-6">
+        <homeIcon class="home-icon mb-1 mr-2" width="18" height="18" />
+        <div @click="() => onPaginationBulletClick(key.id)" class="custom-pagination-bullet" :class="[key.id === currentComponent.id ? 'custom-pagination-active' : '']" v-for="key of components" :key="key"></div>
+      </div>
     </div>
     <div class="card-wrapper mx-4 z-10">
       <Transition :name="slideTransition" mode="out-in" appear>
@@ -34,6 +38,8 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import { ref, computed, watch, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
+
+import 'swiper/css/pagination';
 
 // cards
 import BeatSaberCard from './beatsaber/BeatSaberCard.vue';
@@ -64,10 +70,11 @@ import maimaiDeluxe from '/maimai/logo.png';
 import osu from '/osu/logo.png';
 import quaver from '/quaver/logo.png';
 import sdvx from '/sdvx/logo.png';
+import homeIcon from './homeIcon.vue';
 
 const router = useRouter();
 const activeGame = ref(null);
-const swiper = ref(null);
+const swiperRef = ref(null);
 const slideTransition = ref("slide-left");
 
 const components = [
@@ -130,11 +137,22 @@ const breakpoints = {
 const onSlideChange = ({ activeIndex, previousIndex, slides }) => {
   const component = components.find(c => c.name === slides[activeIndex]?.dataset?.name);
   slideTransition.value = (activeIndex > previousIndex) ? 'slide-left' : 'slide-right';
-  router.replace({ path: '/', query: { game: component.name } });
+  if (component) {
+    router.replace({ path: '/', query: { game: component.name } });
+  }
+}
+
+
+const onSwiper = (swiper) => {
+  swiperRef.value = swiper;
+};
+
+const onPaginationBulletClick = (key) => {
+  swiperRef.value.slideTo(key);
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 // SLIDE LEFT ===================================
 .slide-left-enter-active,
 .slide-left-leave-active {
@@ -252,15 +270,45 @@ const onSlideChange = ({ activeIndex, previousIndex, slides }) => {
   height: 100%;
 }
 
-.menu {
-  position: absolute;
-}
-
 .card-wrapper {
   max-width: 450px;
 }
 
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.custom-pagination > div:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.custom-pagination > .home-icon {
+  opacity: 0.6;
+  cursor: pointer;
+  fill: black;
+}
+
+.custom-pagination > .home-icon:hover {
+  fill: white;
+  opacity: .5;
+}
+
+.custom-pagination > div {
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.custom-pagination > div.custom-pagination-active {
+  background-color: white;
+  transition: all .1s linear;
+}
 
 @media (min-width: 320px) {
   .carousel-wrapper {
