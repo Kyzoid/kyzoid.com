@@ -23,3 +23,24 @@ html {
   font-weight: 600;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'RetroSignature';
+  src: url('/fonts/RetroSignature.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeonTubes';
+  src: url('/fonts/NeonTubes-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-shadow {
+  text-shadow: black 1px 1px 0, black -1px -1px 0,
+		black -1px 1px 0, black 1px -1px 0,
+		black 0px 1px 0, black 0 -1px 0,
+		black -1px 0 0, black 1px 0 0;
+}

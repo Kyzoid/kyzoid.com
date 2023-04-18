@@ -1,93 +1,25 @@
 {
-  "maimaiDeluxe": {
-    "username": "Kyzoid",
-    "rating": 10103,
-    "playCount": 97,
-    "title": "ぱないの！",
-    "classRank": "a4",
-    "courseRank": 1
-  },
-  "chunithm": {
-    "username": "Kyzoid",
-    "rating": "4.78",
-    "playCount": 4,
-    "title": "New Comer",
-    "level": 2
-  },
-  "maimaiFinale": {
-    "username": "Kyzoid",
-    "rating": 2.78,
-    "title": "debut",
-    "level": 12
-  },
-  "SDVX": {
-    "id": "SV-4407-9462",
-    "username": "Kyzoid",
-    "rating": "17.010",
-    "title": "よろしくお願いします！",
-    "dan": 9
-  },
-  "popn": {
-    "username": "Kyzoid",
-    "id": "7232-2008-8884",
-    "rating": 48.23
-  },
-  "jubeat": {
-    "username": "Kyzoid",
-    "rating": 2377.1,
-    "playCount": 83
-  },
+  "maimaiDeluxe": "10103",
+  "SDVX": "17.240",
+  "popn": "--.--",
+  "jubeat": "2377",
+  "vivid/stasis": "15027",
   "ez2on": {
-    "username": "Kyzoid",
-    "level": 75,
-    "rating": {
-      "4S": "20,923",
-      "5S": "20,606",
-      "6S": "21,624",
-      "8S": "20,016"
-    },
-    "playCount": {
-      "4S": "183",
-      "5S": "146",
-      "6S": "169",
-      "8S": "479"
-    }
+    "4S": "20.949",
+    "5S": "21.784",
+    "6S": "22.002",
+    "8S": "20.464"
   },
-  "beatsaber": {
-    "username": "Kyzoid",
-    "rating": "3052.56",
-    "globalRank": 11731,
-    "countryRank": 348,
-    "playCount": 101
-  },
+  "scoresaber": "3071",
   "osu": {
-    "username": "Kyzoid",
-    "rating": {
-      "std" : { "pp": null, "globalRank": null, "countryRank": null, "accuracy": "98,97%", "playCount": "25 880" },
-      "taiko" : { "pp": null, "globalRank": null, "countryRank": null, "accuracy": "98,23%", "playCount": "2 945" },
-      "mania" : { "pp": 8096, "globalRank": "3 432", "countryRank": 43, "accuracy": "96,32%", "playCount": "21 243" }
-    }
+    "std" : "0",
+    "taiko" : "0",
+    "catch": "1536",
+    "mania": "8118"
   },
   "quaver": {
-    "username": "Kyzoid",
-    "rating": {
-      "4K": { "rating": 722.13, "accuracy": "98.89%", "countryRank": 18, "globalRank": 658, "playCount": "928" },
-      "7K": { "rating": 662.59, "accuracy": "97.47%", "countryRank": 5, "globalRank": 139, "playCount": "547" }
-    }
+    "4K": "722.13",
+    "7K": "662.59"
   },
-  "etterna": {
-    "username": "Kyzoid",
-    "globalRank": 2791,
-    "countryRank": 46,
-    "rating": {
-      "global": "24.00",
-      "stream": "23.29",
-      "jumpstream": "24.47",
-      "handstream": "24.66",
-      "stamina": "24.03",
-      "jacks": "22.50",
-      "chordjacks": "23.28",
-      "technical": "24.25"
-    }
-  }
+  "etterna": "24.00"
 }
