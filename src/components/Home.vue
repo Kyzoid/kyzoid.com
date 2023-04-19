@@ -106,7 +106,7 @@ const rotateToMouse = (e) => {
       circle at
       ${center.x * 2 + bounds.width/2}px
       ${center.y * 2 + bounds.height/2}px,
-      #ffffff2a,
+      #B5BEDF2A,
       #0000000f
    )
   `;
@@ -172,7 +172,7 @@ const ez2onAverage = () => {
   left: 0;
   top: 0;
   border-radius: 10px;
-  background-image: radial-gradient(circle at 150% 150%, #ffffff2a, #0000000f);
+  background-image: radial-gradient(circle at 150% 150%, #B5BEDF2A, #0000000f);
 }
 
 .username {

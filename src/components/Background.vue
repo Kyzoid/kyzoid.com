@@ -68,43 +68,43 @@ defineProps({
 }
 
 .line.l1 {
-  top: 10%;
-  left: -12%;
+  top: 2rem;
+  left: -21rem;
   opacity: 0.5;
 }
 
 .line.l2 {
-  top: 0;
-  left: -5%;
+  top: 0rem;
+  left: -17rem;
   opacity: 1;
 }
 
 .line.l3 {
-  top: -1%;
-  left: -1%;
+  top: 0rem;
+  left: -12rem;
   opacity: 0.2;
 }
 
 .line.l4 {
-  bottom: -6%;
-  right: 20%;
+  bottom: -18rem;
+  right: 11rem;
   opacity: 0.15;
 }
 
 .line.l5 {
-  bottom: 22%;
-  right: -10%;
+  bottom: 4rem;
+  right: -22rem;
   opacity: 0.2;
 }
 
 .line.l6 {
-  bottom: -4%;
-  right: 0%;
+  bottom: -16rem;
+  right: 0rem;
 }
 
 .line.l7 {
-  bottom: -10%;
-  right: 0%;
+  bottom: -12rem;
+  right: 0rem;
   opacity: 0.5;
 }
 
@@ -217,5 +217,42 @@ defineProps({
 
 .shape.square.s1 {
   background-color: #EEBC87;
+}
+
+@media (min-width: 768px) {
+  .line.l1 {
+    top: 8rem;
+    left: -18rem;
+  }
+
+  .line.l2 {
+    top: 0rem;
+    left: -7rem;
+  }
+
+  .line.l3 {
+    top: -1rem;
+    left: -1rem;
+  }
+
+  .line.l4 {
+    bottom: -10rem;
+    right: 22rem;
+  }
+
+  .line.l5 {
+    bottom: 14rem;
+    right: -10rem;
+  }
+
+  .line.l6 {
+    bottom: -2rem;
+    right: 0rem;
+  }
+
+  .line.l7 {
+    bottom: -6rem;
+    right: 0rem;
+  }
 }
 </style>
