@@ -22,16 +22,27 @@
       <img class="star star-xs sxs8" :src="Star" alt="Star XS">
 
       <div>
-        <img class="line l1" :src="Line" alt="Line">
-        <img class="line l2" :src="Line" alt="Line">
-        <img class="line l3" :src="Line" alt="Line">
+        <img class="z-20 line l1" :src="Line" alt="Line">
+        <img class="z-20 line l2" :src="Line" alt="Line">
+        <img class="z-20 line l3" :src="Line" alt="Line">
       </div>
 
       <div>
-        <img class="line l4" :src="Line" alt="Line">
-        <img class="line l5" :src="Line" alt="Line">
-        <img class="line l6" :src="Line" alt="Line">
-        <img class="line l7" :src="Line" alt="Line">
+        <img class="z-20 line l4" :src="Line" alt="Line">
+        <img class="z-20 line l5" :src="Line" alt="Line">
+        <img class="z-20 line l6" :src="Line" alt="Line">
+        <img class="z-20 line l7" :src="Line" alt="Line">
+      </div>
+
+      <div class="footer">
+        <img class="z-10 dark-buildings db1" width="100" :src="DarkBuildings" alt="Dark buildings">
+        <img class="z-10 dark-buildings db2" width="80" :src="DarkBuildings" alt="Dark buildings">
+        <img class="z-10 dark-buildings db3" width="80" :src="DarkBuildings" alt="Dark buildings">
+        <img class="z-10 dark-buildings db4" width="80" :src="DarkBuildings" alt="Dark buildings">
+
+        <img class="z-10 dark-buildings db5" width="80" :src="DarkBuildings" alt="Dark buildings">
+        <img class="z-10 dark-buildings db6" width="80" :src="DarkBuildings" alt="Dark buildings">
+        <img class="z-10 dark-buildings db7" width="100" :src="DarkBuildings" alt="Dark buildings">
       </div>
     </div>
   </div>
@@ -41,6 +52,7 @@
 import Moon from '/moon.svg';
 import Star from '/star.svg';
 import Line from '/line.svg';
+import DarkBuildings from '/dark-buildings.svg';
 
 defineProps({
   mode: String
@@ -53,6 +65,67 @@ defineProps({
   top: 3rem;
   right: 10%;
   filter: drop-shadow(0 0 25px #E8EFFA);
+}
+
+.building {
+  position: absolute;
+  bottom: -2rem;
+  right: 1rem;
+  opacity: 1;
+}
+
+.dark-buildings {
+  position: absolute;
+}
+
+.dark-buildings.db1 {
+  bottom: -1rem;
+  right: 2rem;
+  opacity: 0.4;
+}
+
+.dark-buildings.db2 {
+  bottom: -3rem;
+  right: 12rem;
+  opacity: 0.3;
+}
+
+.dark-buildings.db3 {
+  display: none;
+  bottom: -4rem;
+  right: 22rem;
+  opacity: 0.2;
+}
+
+.dark-buildings.db4 {
+  display: none;
+  bottom: -6rem;
+  right: 26rem;
+  opacity: 0.1;
+}
+
+
+.dark-buildings.db7 {
+  bottom: -1rem;
+  left: 2rem;
+  opacity: 0.4;
+  transform: scaleX(-1);
+}
+
+.dark-buildings.db6 {
+  display: none;
+  bottom: -3rem;
+  left: 12rem;
+  opacity: 0.3;
+  transform: scaleX(-1);
+}
+
+.dark-buildings.db5 {
+  display: none;
+  bottom: -4rem;
+  left: 22rem;
+  opacity: 0.2;
+  transform: scaleX(-1);
 }
 
 .star {
@@ -254,5 +327,18 @@ defineProps({
     bottom: -6rem;
     right: 0rem;
   }
-}
+
+  .dark-buildings.db3 {
+    display: block;
+  }
+  .dark-buildings.db4 {
+    display: block;
+  }
+  .dark-buildings.db6 {
+    display: block;
+  }
+  .dark-buildings.db5 {
+    display: block;
+  }
+  }
 </style>
