@@ -140,7 +140,7 @@ const ez2onAverage = () => {
 
 .body {
   perspective: 1500px;
-  background: #090C15;
+  background: linear-gradient(to bottom, #06090f,#090C15);
 }
 
 .card { 
@@ -176,17 +176,22 @@ const ez2onAverage = () => {
 }
 
 .username {
-  font-size: 96px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #D2CED9;
+}
+
+.username h1 {
+  font-size: 96px;
+  background: linear-gradient(to bottom, #ADADDC, 5%, #D7D5F1);
+  background-clip: text;
+  color: transparent;
 }
 
 .username .signature {
   font-family: 'RetroSignature';
-  background: linear-gradient(to top, #FF83E4, #FF832C);
+  background: linear-gradient(to top,#FF83E4,#FF832C);
   background-clip: text;
   font-size: 200px;
   color: transparent;
