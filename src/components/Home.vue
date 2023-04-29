@@ -25,7 +25,7 @@
           </div>
 
           <div class="mb-2">
-            <h2 class="uppercase text-xs opacity-60">Jubeat</h2>
+            <h2 class="uppercase text-xs opacity-60">Jubeat Festo</h2>
             <JubeatCard :value="stats['jubeat']" />
           </div>
           

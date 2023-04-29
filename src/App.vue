@@ -19,6 +19,9 @@
 </script>
 
 <style scoped>
+* {
+  user-select: none;
+}
 .fade-enter-active, .fade-leave-active {
   transition: opacity 1s;
 }
