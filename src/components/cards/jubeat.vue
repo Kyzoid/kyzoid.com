@@ -21,12 +21,12 @@ defineProps({
   position: relative;
   width: 110px;
   height: 32px;
-  color: #E2CDFF;
+  color: #dda4f3;
   border-radius: 6px;
   border: solid 1px #fff;
-  background: linear-gradient(to right, rgba(183, 145, 185, 0.2 ), rgba(148, 83, 146, 0.2));
+  background: linear-gradient(to right, rgba(226, 158, 230, 0.2), rgba(197, 111, 194, 0.2));
   /* box-shadow: 0 0 1px #43c2cf, 0 0 2px #43c2cf, 0 0 3px #43c2cf, 0 0 1px #43c2cf inset, 0 0 6px #43c2cf inset, 0 0 6px #43c2cf inset; */
-  box-shadow: 0 0 1px #8A78D6, 0 0 2px #8A78D6, 0 0 3px #8A78D6, 0 0 1px #8A78D6 inset, 0 0 6px #8A78D6 inset, 0 0 6px #8A78D6 inset;
+  box-shadow: 0 0 1px #dda4f3, 0 0 2px #dda4f3, 0 0 3px #dda4f3, 0 0 1px #dda4f3 inset, 0 0 6px #dda4f3 inset, 0 0 6px #dda4f3 inset;
 }
 
 .jubeat:after {
@@ -43,7 +43,7 @@ defineProps({
 
 .jubeat-rating {
   /* background: linear-gradient(to top, #89ffd4, #5cedff); */
-  background: linear-gradient(to bottom, #8A78D6, #E2CDFF);
+  background: linear-gradient(to bottom, #dda4f3, #e1bdf0);
   background-clip: text;
   color: transparent;
   font-weight: 700;
