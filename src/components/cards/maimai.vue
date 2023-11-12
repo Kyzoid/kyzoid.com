@@ -1,12 +1,12 @@
 <template>
   <div class="relative rating shrink-0 mt-2 sm:mt-0.5">
-    <img class="absolute" :src="rating" alt="Rating purple">
+    <img class="absolute" :src="rating" alt="Rating silver">
     <span class="absolute font-bold text-sm">{{ value }}</span>
   </div>
 </template>
 
 <script setup>
-import rating from '/maimai/rating_base_purple.png';
+import rating from '/maimai/rating_base_silver.png';
 defineProps({
   value: String
 });
