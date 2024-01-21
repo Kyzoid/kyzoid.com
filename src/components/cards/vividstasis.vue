@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-1 vivid">
+  <div class="vivid">
     <img class="z-0 vivid-bg" :src="background" alt="vivid/stasis card">
     <div class="flex items-center justify-between h-full px-2">
       <span class="z-10 vivid-label font-medium text-shadow uppercase">Rating</span>

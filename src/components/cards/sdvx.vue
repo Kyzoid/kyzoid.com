@@ -1,5 +1,5 @@
 <template>
-  <div class="sdvx mt-0.5 relative flex items-center">
+  <div class="sdvx relative flex items-center">
     <img class="sdvx-bg" :src="background" alt="SDVX background" />
     <img class="sdvx-icon" width="28" :src="`/sdvx/volforce/${volforce(value)}.png`" :alt="`Volforce ${volforce(value)}`" />
     <img class="sdvx-stars" :src="`/sdvx/volforce/force/rounded/${volforceStars(value)}.png`" alt="Volforce stars">

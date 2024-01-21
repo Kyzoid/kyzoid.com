@@ -1,5 +1,5 @@
 <template>
-  <div class="osu relative mt-1 flex items-center justify-center">
+  <div class="osu relative flex items-center justify-center">
     <img class="osu-bg" :src="background" alt="osu! Card" />
     <div class="px-2 osu-wrapper relative w-full flex justify-center -ml-2">
       <span class="absolute osu-rating z-20">{{ value }}pp</span>

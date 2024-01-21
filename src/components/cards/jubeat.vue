@@ -1,5 +1,5 @@
 <template>
-  <div class="jubeat mt-1 flex justify-between items-center px-2">
+  <div class="jubeat flex justify-between items-center px-2">
     <span class="jubeat-label font-medium">Jubility</span>
     <span class="jubeat-rating font-medium opacity-90">{{ value }}</span>
   </div>

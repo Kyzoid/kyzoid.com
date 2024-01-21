@@ -1,5 +1,5 @@
 <template>
-  <div class="scoresaber flex items-center justify-center px-2 mt-1">
+  <div class="scoresaber flex items-center justify-center px-2">
     <img class="scoresaber-bg" :src="background" alt="ScoreSaber Card">
     <span class="font-medium scoresaber-rating mr-1">{{ value }}</span>
     <span class="font-medium scoresaber-label">pp</span>

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative rating shrink-0 mt-2 sm:mt-0.5">
+  <div class="relative rating shrink-0">
     <img class="absolute" :src="rating" alt="Rating silver">
     <span class="absolute font-bold text-sm">{{ value }}</span>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="popn relative px-2 mt-1">
+  <div class="popn relative px-2">
     <div class="popn-inner h-full flex items-center justify-center">
       <div class="popn-avatar h-6 w-6 rounded-full border-blue-600 border-2">
         <img :src="classThree" alt="Pop'N Music class 6">

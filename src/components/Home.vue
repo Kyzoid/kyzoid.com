@@ -2,7 +2,7 @@
   <div class="body flex flex-col items-center justify-center h-full w-full">
     <Background class="fixed top-0 left-0 overflow-hidden" />
 
-    <div class="username-wrapper flex flex-col justify-center align-center mb-8 ">
+    <div class="username-wrapper flex flex-col justify-center align-center mb-8">
       <div class="relative ml-2 username">
         <h1 class="absolute z-20">KYZOID</h1>
         <span class="absolute z-10 signature">Kyzoid</span>
@@ -11,44 +11,43 @@
     </div>
 
     <div ref="$card" class="z-30 card" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave" @mousemove="rotateToMouse">
-      <div class="grid grid-cols-2 gap-2 text-white font-weight-regular">
-        <div>
-          <div class="mb-2">
-            <h2 class="uppercase text-xs opacity-60">Sound Voltex</h2>
+      <div class="grid grid-cols-2 gap-3 sm:gap-6 text-white font-weight-regular p-3 sm:p-6">
+        <div class="grid grid-cols-1 gap-3">
+          <div>
+            <h2 class="uppercase text-xs opacity-50 mb-1">Sound Voltex</h2>
             <SDVXCard :value="stats['SDVX']" />
           </div>
-          <div class="mb-2">
-            <h2 class="uppercase text-xs opacity-60">Maimai DX</h2>
-            <div class="mt-0.5 flex items-center">
-              <MaimaiCard class="maimai" :value="stats['maimaiDeluxe']" />
-            </div>
+          <div>
+            <h2 class="uppercase text-xs opacity-50 mb-1">Maimai DX</h2>
+            <MaimaiCard class="maimai" :value="stats['maimaiDeluxe']" />
           </div>
 
-          <div class="mb-2">
-            <h2 class="uppercase text-xs opacity-60">Jubeat Festo</h2>
+          <div>
+            <h2 class="uppercase text-xs opacity-50 mb-1">Jubeat Ave.</h2>
             <JubeatCard :value="stats['jubeat']" />
           </div>
           
           <div>
-            <h2 class="uppercase text-xs opacity-60">Pop'n Music</h2>
+            <h2 class="uppercase text-xs opacity-50 mb-1">Pop'n Music</h2>
             <PopnCard :value="stats['popn']" />
           </div>
         </div>
-        <div>
-          <div class="mb-2">
-            <h2 class="uppercase text-xs opacity-60">osu!mania</h2>
+
+        <div class="grid grid-cols-1 gap-4">
+          <div>
+            <h2 class="uppercase text-xs opacity-50 mb-1">osu!mania</h2>
             <OsuCard :value="stats['osu']['mania']" />
           </div>
-          <div class="mb-2">
-            <h2 class="uppercase text-xs opacity-60">ScoreSaber</h2>
+          <div>
+            <h2 class="uppercase text-xs opacity-50 mb-1">ScoreSaber</h2>
             <ScoreSaberCard :value="stats['scoresaber']" />
           </div>
-          <div class="mb-2">
-            <h2 class="uppercase text-xs opacity-60">EZ2ON Reboot: R</h2>
+          <div>
+            <h2 class="uppercase text-xs opacity-50 mb-1">EZ2ON Reboot: R</h2>
             <EZ2ONCard :value="ez2onAverage()" />
           </div>
           <div>
-            <h2 class="uppercase text-xs opacity-60">vivid/stasis</h2>
+            <h2 class="uppercase text-xs opacity-50 mb-1">vivid/stasis</h2>
             <VividStasisCard :value="stats['vivid/stasis']" />
           </div>
         </div>
@@ -145,10 +144,8 @@ const ez2onAverage = () => {
 
 .card { 
   position: relative;
-  width: 350px;
   box-shadow: 0 1px 10px rgba(0,0,0,0.2);
   border-radius: 12px;
-  padding: .5rem .825rem .825rem .825rem;
   border: 2px solid rgba(255,255,255, 0.1); 
 
   background: rgba(0, 0, 0, 0.1);
