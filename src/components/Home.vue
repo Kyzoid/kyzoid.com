@@ -10,7 +10,7 @@
       <span class="mt-16 text-sm uppercase subtitle font-bold z-20">Rhythm game player</span>
     </div>
 
-    <div ref="$card" class="z-30 card" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave" @mousemove="rotateToMouse">
+    <div ref="$card" class="z-30 card relative" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave" @mousemove="rotateToMouse">
       <div class="grid grid-cols-2 gap-3 sm:gap-6 text-white font-weight-regular p-3 sm:p-6">
         <div class="grid grid-cols-1 gap-3">
           <div>
@@ -52,10 +52,12 @@
           </div>
         </div>
       </div>
-        
       <div ref="$glow" class="glow"></div>
       <div ref="$shine" class="shine"></div>
+
+      <div class="text-xs opacity-20 text-center mb-3">last updated: {{ daysAgo(2024, 2, 28) }}</div>
     </div>
+
   </div>
 </template>
 
@@ -76,6 +78,20 @@ const $card = ref(null);
 const $glow = ref(null);
 const isMouseOver = ref(false);
 let bounds;
+
+const daysAgo = (year, month, day) => {
+  const date = new Date(year, month - 1, day);
+  const differenceInMilliseconds = Date.now() - date.getTime();
+  const differenceInDays = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24));
+
+  if (differenceInDays === 0) {
+    return "today";
+  } else if (differenceInDays === 1) {
+    return "1 day ago";
+  } else {
+    return `${differenceInDays} days ago`;
+  }
+}
 
 const rotateToMouse = (e) => {
   if (!isMouseOver.value) return;
