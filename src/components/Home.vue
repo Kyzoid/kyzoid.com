@@ -55,7 +55,7 @@
       <div ref="$glow" class="glow"></div>
       <div ref="$shine" class="shine"></div>
 
-      <div class="text-xs opacity-20 text-center mb-3">last updated: {{ daysAgo(2024, 6, 19) }}</div>
+      <div class="text-xs opacity-20 text-center mb-3">last updated: {{ daysAgo(2024, 6, 29) }}</div>
     </div>
 
   </div>
