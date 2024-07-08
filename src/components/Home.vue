@@ -8,54 +8,57 @@
         <span class="absolute z-10 signature">Kyzoid</span>
       </div>
       <span class="mt-16 text-sm uppercase subtitle font-bold z-20">Rhythm game player</span>
+      <div class="text-xs opacity-50 text-center mb-3 date-sub">last updated: {{ daysAgo(2024, 7, 8) }}</div>
     </div>
 
     <div ref="$card" class="z-30 card relative" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave" @mousemove="rotateToMouse">
       <div class="grid grid-cols-2 gap-3 sm:gap-6 text-white font-weight-regular p-3 sm:p-6">
         <div class="grid grid-cols-1 gap-3">
           <div>
-            <h2 class="uppercase text-xs opacity-50 mb-1">Sound Voltex</h2>
-            <SDVXCard :value="stats['SDVX']" />
-          </div>
-          <div>
-            <h2 class="uppercase text-xs opacity-50 mb-1">Maimai DX</h2>
+            <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center"><ActivePill /><span class="ml-1.5">Maimai DX</span></h2>
             <MaimaiCard class="maimai" :value="stats['maimaiDeluxe']" />
           </div>
 
           <div>
-            <h2 class="uppercase text-xs opacity-50 mb-1">Jubeat Ave.</h2>
+            <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center">Sound Voltex</h2>
+            <SDVXCard :value="stats['SDVX']" />
+          </div>
+          
+          <div>
+            <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center"><ActivePill /><span class="ml-1.5">Jubeat Ave.</span></h2>
             <JubeatCard :value="stats['jubeat']" />
           </div>
           
           <div>
-            <h2 class="uppercase text-xs opacity-50 mb-1">Pop'n Music</h2>
+            <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center">Pop'n Music</h2>
             <PopnCard :value="stats['popn']" />
           </div>
         </div>
 
         <div class="grid grid-cols-1 gap-4">
           <div>
-            <h2 class="uppercase text-xs opacity-50 mb-1">osu!mania</h2>
-            <OsuCard :value="stats['osu']['mania']" />
-          </div>
-          <div>
-            <h2 class="uppercase text-xs opacity-50 mb-1">ScoreSaber</h2>
-            <ScoreSaberCard :value="stats['scoresaber']" />
-          </div>
-          <div>
-            <h2 class="uppercase text-xs opacity-50 mb-1">EZ2ON Reboot: R</h2>
+            <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center">EZ2ON Reboot: R</h2>
             <EZ2ONCard :value="ez2onAverage()" />
           </div>
+
           <div>
-            <h2 class="uppercase text-xs opacity-50 mb-1">vivid/stasis</h2>
+            <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center">osu!mania</h2>
+            <OsuCard :value="stats['osu']['mania']" />
+          </div>
+
+          <div>
+            <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center">vivid/stasis</h2>
             <VividStasisCard :value="stats['vivid/stasis']" />
+          </div>
+
+          <div>
+            <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center">ScoreSaber</h2>
+            <ScoreSaberCard :value="stats['scoresaber']" />
           </div>
         </div>
       </div>
       <div ref="$glow" class="glow"></div>
       <div ref="$shine" class="shine"></div>
-
-      <div class="text-xs opacity-20 text-center mb-3">last updated: {{ daysAgo(2024, 6, 29) }}</div>
     </div>
 
   </div>
@@ -73,6 +76,7 @@ import ScoreSaberCard from './cards/scoresaber.vue';
 import SDVXCard from './cards/sdvx.vue';
 import VividStasisCard from './cards/vividstasis.vue';
 import Background from './Background.vue';
+import ActivePill from './ActivePill.vue';
 
 const $card = ref(null);
 const $glow = ref(null);
@@ -151,6 +155,11 @@ const ez2onAverage = () => {
   word-break: keep-all;
   letter-spacing: 0.2em;
   word-spacing: 0.4em;
+}
+
+.date-sub {
+  color: #9185A6;
+  letter-spacing: 0.08em;
 }
 
 .body {
