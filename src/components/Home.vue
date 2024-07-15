@@ -8,7 +8,7 @@
         <span class="absolute z-10 signature">Kyzoid</span>
       </div>
       <span class="mt-16 text-sm uppercase subtitle font-bold z-20">Rhythm game player</span>
-      <div class="text-xs opacity-50 text-center mb-3 date-sub">last updated: {{ daysAgo(2024, 7, 8) }}</div>
+      <div class="text-xs opacity-50 text-center mb-3 date-sub">last updated: {{ daysAgo(2024, 7, 15) }}</div>
     </div>
 
     <div ref="$card" class="z-30 card relative" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave" @mousemove="rotateToMouse">
@@ -37,6 +37,11 @@
 
         <div class="grid grid-cols-1 gap-4">
           <div>
+            <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center">DJMAX R. V - 8B</h2>
+            <DJMaxCard :value="stats['djmax']['8K']" />
+          </div>
+
+          <div>
             <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center">EZ2ON Reboot: R</h2>
             <EZ2ONCard :value="ez2onAverage()" />
           </div>
@@ -49,11 +54,6 @@
           <div>
             <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center">vivid/stasis</h2>
             <VividStasisCard :value="stats['vivid/stasis']" />
-          </div>
-
-          <div>
-            <h2 class="uppercase text-xs opacity-50 mb-1 flex items-center">ScoreSaber</h2>
-            <ScoreSaberCard :value="stats['scoresaber']" />
           </div>
         </div>
       </div>
@@ -74,6 +74,7 @@ import OsuCard from './cards/osu.vue';
 import PopnCard from './cards/popn.vue';
 import ScoreSaberCard from './cards/scoresaber.vue';
 import SDVXCard from './cards/sdvx.vue';
+import DJMaxCard from './cards/djmax.vue';
 import VividStasisCard from './cards/vividstasis.vue';
 import Background from './Background.vue';
 import ActivePill from './ActivePill.vue';
