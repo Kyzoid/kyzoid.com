@@ -19,16 +19,21 @@
             <MaimaiCard class="maimai" :value="stats['maimaiDeluxe']" />
           </div>
 
-          <div class="opacity-50">
-            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Sound Voltex</span><img class="ml-1.5" :src="zzzIcon" width="16" /></h2>
-            <SDVXCard :value="stats['SDVX']" />
+          <div>
+            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Chunithm</span></h2>
+            <ChunithmCard :value="stats['chunithm']" />
           </div>
-          
+
           <div>
             <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Jubeat Ave.</span></h2>
             <JubeatCard :value="stats['jubeat']" />
           </div>
-          
+
+          <div class="opacity-50">
+            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Sound Voltex</span><img class="ml-1.5" :src="zzzIcon" width="16" /></h2>
+            <SDVXCard :value="stats['SDVX']" />
+          </div>
+
           <div class="opacity-50">
             <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Pop'n Music</span><img class="ml-1.5" :src="zzzIcon" width="16" /></h2>
             <PopnCard :value="stats['popn']" />
@@ -55,6 +60,11 @@
             <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>vivid/stasis</span><img class="ml-1.5" :src="zzzIcon" width="16" /></h2>
             <VividStasisCard :value="stats['vivid/stasis']" />
           </div>
+
+          <div class="opacity-50">
+            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Scoresaber</span><img class="ml-1.5" :src="zzzIcon" width="16" /></h2>
+            <ScoreSaberCard :value="stats['scoresaber']" />
+          </div>
         </div>
       </div>
       <div ref="$glow" class="glow"></div>
@@ -76,6 +86,7 @@ import ScoreSaberCard from './cards/scoresaber.vue';
 import SDVXCard from './cards/sdvx.vue';
 import DJMaxCard from './cards/djmax.vue';
 import VividStasisCard from './cards/vividstasis.vue';
+import ChunithmCard from './cards/chunithm.vue';
 import Background from './Background.vue';
 import zzzIcon from '/zzz.png';
 

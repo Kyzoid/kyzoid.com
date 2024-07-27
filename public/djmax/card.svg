@@ -1,8 +1,8 @@
-<svg width="260" height="70" viewBox="0 0 260 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 260 70" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 0H260V70H0V0Z" fill="url(#paint0_linear_401_245)"/>
-<path d="M4 5H256V65H4V5Z" fill="#30302F"/>
-<mask id="mask0_401_245" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="5" width="252" height="60">
-<path d="M4 5H256V65H4V5Z" fill="#30302F"/>
+<path d="M5 5H255V65H5V5Z" fill="#30302F"/>
+<mask id="mask0_401_245" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="250" height="60">
+<path d="M5 5H255V65H5V5Z" fill="#30302F"/>
 </mask>
 <g mask="url(#mask0_401_245)">
 <line x1="283.933" y1="77.5218" x2="82.4073" y2="-124.004" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
