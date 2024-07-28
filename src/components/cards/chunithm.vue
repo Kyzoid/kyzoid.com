@@ -62,11 +62,11 @@ const ratingName = (rating) => {
 }
 
 .chu-rating img {
-  max-height: 15px;
+  max-height: 14px;
 }
 
 .chu-rating .comma {
-  max-height: 5px;
+  max-height: 4px;
 }
 
 .rainbow {
