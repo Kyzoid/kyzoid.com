@@ -8,7 +8,7 @@
         <span class="absolute z-10 signature">Kyzoid</span>
       </div>
       <span class="mt-16 text-sm uppercase subtitle font-bold z-20">Rhythm game player</span>
-      <div class="text-xs opacity-50 text-center mb-3 date-sub">last updated: {{ daysAgo(2024, 8, 21) }}</div>
+      <div class="text-xs opacity-50 text-center mb-3 date-sub">last updated: {{ daysAgo(2024, 9, 19) }}</div>
     </div>
 
     <div ref="$card" class="z-30 card relative" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave" @mousemove="rotateToMouse">
