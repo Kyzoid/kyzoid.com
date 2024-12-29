@@ -19,7 +19,7 @@
         >
           <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center">
             <span>{{ value["name"] }}</span>
-            <img v-if="!value['active']" class="ml-1.5" :src="zzzIcon" width="16" />
+            <img v-if="!value['active']" class="ml-1.5" :src="zzzIcon" alt="Sleep" width="16" />
           </h2>
           <component :is="key" :value="value['rating']"></component>
         </div>

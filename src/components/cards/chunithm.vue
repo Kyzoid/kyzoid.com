@@ -4,8 +4,8 @@
     <div class="absolute mt-0.5 label uppercase left-2">Rating</div>
     <div class="chu-rating absolute flex items-center">
       <template v-for="(char, index) of valueCharacters">
-        <img class="comma mt-2.5" v-if="char === '.'" :src="`/chunithm/rating/rating_${ratingName(value)}_comma.png`">
-        <img class="" v-else :src="`/chunithm/rating/rating_${ratingName(value)}_0${char}.png`">
+        <img class="comma mt-2.5" v-if="char === '.'" :src="`/chunithm/rating/rating_${ratingName(value)}_comma.png`" alt="Comma">
+        <img v-else :src="`/chunithm/rating/rating_${ratingName(value)}_0${char}.png`" :alt="`Number ${char}`">
       </template>
     </div>
   </div>
