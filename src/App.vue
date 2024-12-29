@@ -1,10 +1,11 @@
 <template>
   <div class="body h-full">
-    <router-view />
+    <Home />
   </div>
 </template>
 
 <script setup>
+import Home from './components/Home.vue';
 // import { onMounted, ref } from 'vue';
 // import assetsLoader from './helpers/assetsLoader';
 

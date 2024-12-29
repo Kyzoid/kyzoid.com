@@ -8,65 +8,24 @@
         <span class="absolute z-10 signature">Kyzoid</span>
       </div>
       <span class="mt-16 text-sm uppercase subtitle font-bold z-20">Rhythm game player</span>
-      <div class="text-xs opacity-50 text-center mb-3 date-sub">last updated: {{ daysAgo(2024, 12, 9) }}</div>
+      <div class="text-xs opacity-50 text-center mb-3 date-sub">last updated: {{ daysAgo(stats.lastUpdated) }}</div>
     </div>
 
     <div ref="$card" class="z-30 card relative" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave" @mousemove="rotateToMouse">
       <div class="grid grid-cols-2 gap-3 sm:gap-6 text-white font-weight-regular p-3 sm:p-6">
-        <div class="grid grid-cols-1 gap-3">
-          <div>
-            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Maimai DX</span></h2>
-            <MaimaiCard class="maimai" :value="stats['maimaiDeluxe']" />
-          </div>
 
-          <div>
-            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Chunithm</span></h2>
-            <ChunithmCard :value="stats['chunithm']" />
-          </div>
-
-          <div>
-            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Jubeat Ave.</span></h2>
-            <JubeatCard :value="stats['jubeat']" />
-          </div>
-
-          <div class="opacity-50">
-            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Sound Voltex</span><img class="ml-1.5" :src="zzzIcon" width="16" /></h2>
-            <SDVXCard :value="stats['SDVX']" />
-          </div>
-
-          <div class="opacity-50">
-            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Pop'n Music</span><img class="ml-1.5" :src="zzzIcon" width="16" /></h2>
-            <PopnCard :value="stats['popn']" />
-          </div>
+        <div v-for="[key, value] in Object.entries(stats.games).filter(([k,v]) => v.show)" :key="key"
+          :class="value['active'] ? '' : 'opacity-50'"
+        >
+          <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center">
+            <span>{{ value["name"] }}</span>
+            <img v-if="!value['active']" class="ml-1.5" :src="zzzIcon" width="16" />
+          </h2>
+          <component :is="key" :value="value['rating']"></component>
         </div>
 
-        <div class="grid grid-cols-1 gap-4">
-          <div>
-            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>DJMAX R. V - 8B</span></h2>
-            <DJMaxCard :value="stats['djmax']['8K']" />
-          </div>
-
-          <div class="opacity-50">
-            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>EZ2ON Reboot: R</span><img class="ml-1.5" :src="zzzIcon" width="16" /></h2>
-            <EZ2ONCard :value="ez2onAverage()" />
-          </div>
-
-          <div class="opacity-50">
-            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>osu!mania</span><img class="ml-1.5" :src="zzzIcon" width="16" /></h2>
-            <OsuCard :value="stats['osu']['mania']" />
-          </div>
-
-          <div class="opacity-50">
-            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>vivid/stasis</span><img class="ml-1.5" :src="zzzIcon" width="16" /></h2>
-            <VividStasisCard :value="stats['vivid/stasis']" />
-          </div>
-
-          <div class="opacity-50">
-            <h2 class="uppercase text-xs opacity-60 mb-1 flex items-center"><span>Scoresaber</span><img class="ml-1.5" :src="zzzIcon" width="16" /></h2>
-            <ScoreSaberCard :value="stats['scoresaber']" />
-          </div>
-        </div>
       </div>
+      
       <div ref="$glow" class="glow"></div>
       <div ref="$shine" class="shine"></div>
     </div>
@@ -77,16 +36,6 @@
 <script setup>
 import { ref } from 'vue';
 import stats from '/src/stats.json';
-import EZ2ONCard from './cards/ez2on.vue';
-import JubeatCard from './cards/jubeat.vue';
-import MaimaiCard from './cards/maimai.vue';
-import OsuCard from './cards/osu.vue';
-import PopnCard from './cards/popn.vue';
-import ScoreSaberCard from './cards/scoresaber.vue';
-import SDVXCard from './cards/sdvx.vue';
-import DJMaxCard from './cards/djmax.vue';
-import VividStasisCard from './cards/vividstasis.vue';
-import ChunithmCard from './cards/chunithm.vue';
 import Background from './Background.vue';
 import zzzIcon from '/zzz.png';
 
@@ -95,8 +44,10 @@ const $glow = ref(null);
 const isMouseOver = ref(false);
 let bounds;
 
-const daysAgo = (year, month, day) => {
-  const date = new Date(year, month - 1, day);
+// date: string (DD-MM-YYYY)
+const daysAgo = (dateString) => {
+  const split = dateString.split('-').map(i => Number(i));
+  const date = new Date(split[2], split[1] - 1, split[0]);
   const differenceInMilliseconds = Date.now() - date.getTime();
   const differenceInDays = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24));
 
@@ -152,12 +103,6 @@ const onMouseLeave = () => {
   isMouseOver.value = false;
   $card.value.style.transform = '';
   $card.value.style.background = '';
-}
-
-const ez2onAverage = () => {
-  const convert = (rating) => Number(rating);
-  const all = convert(stats['ez2on']['4S']) + convert(stats['ez2on']['5S']) + convert(stats['ez2on']['6S']) + convert(stats['ez2on']['8S']);
-  return (all/4).toFixed(3);
 }
 </script>
 

@@ -21,7 +21,6 @@ const props = defineProps({
 
 const valueCharacters = computed(() => {
   const i = props.value.split('');
-  console.log(i)
   return i;
 });
 

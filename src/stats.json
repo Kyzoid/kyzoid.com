@@ -1,29 +1,65 @@
 {
-  "maimaiDeluxe": "15303",
-  "SDVX": "17.260",
-  "popn": "74.63",
-  "jubeat": "7185",
-  "vivid/stasis": "15027",
-  "ez2on": {
-    "4S": "20.949",
-    "5S": "21.784",
-    "6S": "22.002",
-    "8S": "20.464"
-  },
-  "scoresaber": "3071",
-  "chunithm": "14.20",
-  "osu": {
-    "std" : "0",
-    "taiko" : "0",
-    "catch": "1536",
-    "mania": "8138"
-  },
-  "quaver": {
-    "4K": "722.13",
-    "7K": "662.59"
-  },
-  "djmax": {
-    "8K": "8342.2071"
-  },
-  "etterna": "24.00"
+  "lastUpdated": "29-12-2024",
+  "games": {
+    "maimai": {
+      "name": "Maimai DX",
+      "rating": "15357",
+      "active": true,
+      "show": true
+    },
+    "djmax": {
+      "name": "DJMAX Respect V (8B)",
+      "rating": "8342.2071",
+      "active": true,
+      "show": true
+    },
+    "sdvx": {
+      "name": "Sound Voltex",
+      "rating": "17.260",
+      "active": false,
+      "show": true
+    },
+    "popn": {
+      "name": "Pop'n Music",
+      "rating": "74.63",
+      "active": false,
+      "show": true
+    },
+    "jubeat": {
+      "name": "Jubeat Ave.",
+      "rating": "7185",
+      "active": false,
+      "show": true
+    },
+    "ez2on": {
+      "name": "EZ2ON Reboot:R",
+      "rating": "21.300",
+      "active": false,
+      "show": true
+    },
+    "vividstasis": {
+      "name": "Vivid/Stasis",
+      "rating": "15037",
+      "active": false,
+      "show": false
+    },
+    "scoresaber": {
+      "name": "ScoreSaber",
+      "rating": "3071",
+      "active": false,
+      "show": false
+    },
+    "chunithm": {
+      "name": "Chunithm",
+      "rating": "14.20",
+      "active": false,
+      "show": true
+    },
+    "osumania": {
+      "name": "osu!mania",
+      "rating": "8138",
+      "active": false,
+      "show": true
+    }
+  }
 }
