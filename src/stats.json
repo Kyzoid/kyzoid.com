@@ -1,16 +1,22 @@
 {
-  "lastUpdated": "18-05-2025",
+  "lastUpdated": "04-12-2025",
   "games": {
     "maimai": {
       "name": "Maimai DX",
-      "rating": "15527",
+      "rating": "15572",
+      "active": true,
+      "show": true
+    },
+    "jubeat": {
+      "name": "Jubeat Ave.",
+      "rating": "7185",
       "active": true,
       "show": true
     },
     "djmax": {
       "name": "DJMAX Respect V (8B)",
       "rating": "8342.2071",
-      "active": true,
+      "active": false,
       "show": true
     },
     "sdvx": {
@@ -22,12 +28,6 @@
     "popn": {
       "name": "Pop'n Music",
       "rating": "74.63",
-      "active": false,
-      "show": true
-    },
-    "jubeat": {
-      "name": "Jubeat Ave.",
-      "rating": "7185",
       "active": false,
       "show": true
     },
